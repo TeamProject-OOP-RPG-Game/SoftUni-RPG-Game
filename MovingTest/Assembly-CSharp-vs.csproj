@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ClickToMove.cs" />
+     <None Include="Assets\VillageHouse\Shader\TwoSided.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/mitko/Documents/MovingTest/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
