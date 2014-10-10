@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 	public Slider energySlider;
 	public Slider timeSlider;
 	public Text moneyText;
-	private int defaultMoney;
+	private double defaultMoney;
 
 	void OnTriggerEnter(Collider other) 
 	{
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 		else if (other.gameObject.tag == "PickUpMoney") 
 		{
 			other.gameObject.SetActive(false);
-			defaultMoney = int.Parse(moneyText.text);
+			defaultMoney = double.Parse(moneyText.text);
 			defaultMoney = defaultMoney + 100;
 			moneyText.text = defaultMoney.ToString();
 		}
