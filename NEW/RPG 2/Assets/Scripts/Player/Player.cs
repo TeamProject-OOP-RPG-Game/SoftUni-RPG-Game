@@ -12,10 +12,11 @@ public class Player : MonoBehaviour, IPlayer, ICollidable
             Debug.Log("Trigger Action");
         }
         isTriggered = false;
+		Solve ();
     }
 
     private string name;
-    private int knowledge;
+    private int knowledge = 100;
     private int time;
     private int money;
     private int energy;
@@ -238,4 +239,12 @@ public class Player : MonoBehaviour, IPlayer, ICollidable
     {
         isTriggered = false;
     }
+
+	public void Solve () 
+	{
+		Task.Task myTask = new Task.Task (Task.ProblemType.CSharp, 200.0);
+
+		double chanceToSolve = myTask.CalculateChanceToSolve (this.Knowledge);
+		Debug.Log (chanceToSolve);
+	}
 }
