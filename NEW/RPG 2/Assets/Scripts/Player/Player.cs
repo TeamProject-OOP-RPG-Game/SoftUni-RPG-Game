@@ -1,7 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-public class Player {
+
+public class Player : MonoBehaviour, IPlayer, ICollidable
+{
+    void Update()
+    {
+        
+        if (isTriggered == true)
+        {
+            Debug.Log("Trigger Action");
+        }
+        isTriggered = false;
+    }
+
     private string name;
     private int knowledge;
     private int time;
@@ -11,6 +23,7 @@ public class Player {
     private int requiredExperience;
     private int level;
     private int speed;
+    private bool isTriggered = false;
 
     public string Name
     {
@@ -29,6 +42,7 @@ public class Player {
             }
         }
     }
+
     public int Knowledge
     {
         get
@@ -46,6 +60,7 @@ public class Player {
             this.knowledge = value;
         }
     }
+
     public int Time
     {
         get
@@ -63,6 +78,7 @@ public class Player {
             this.time = value;
         }
     }
+
     public int Money
     {
         get
@@ -80,6 +96,7 @@ public class Player {
             this.money = value;
         }
     }
+    
     public int Energy
     {
         get
@@ -97,6 +114,7 @@ public class Player {
             this.energy = value;
         }
     }
+    
     public int CurrentExperience
     {
         get
@@ -114,6 +132,7 @@ public class Player {
             this.currentExperience = value;
         }
     }
+    
     public int RequiredExperience
     {
         get
@@ -131,6 +150,7 @@ public class Player {
             this.requiredExperience = value;
         }
     }
+    
     public int Level
     {
         get
@@ -148,6 +168,7 @@ public class Player {
             this.level = value;
         }
     }
+    
     public int Speed
     {
         get
@@ -178,6 +199,10 @@ public class Player {
     {
         this.Energy = this.Energy += bonusXP;
     }
+    public void IncreaseMoney(int bonusMoney)
+    {
+        this.Money = this.Money += bonusMoney;
+    }
     public void IncreaseRequiredXP(int nextLevelRequiredXP)
     {
         this.RequiredExperience = this.RequiredExperience += nextLevelRequiredXP;
@@ -191,4 +216,26 @@ public class Player {
         this.Speed += bonusSpeed;
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        //private bool touchingObj = false;
+
+
+        switch (other.tag)
+        {
+            case "PickUpMoney": IncreaseMoney(100);
+                break;
+            case "PickUpEnergy": IncreaseEnergy(100);
+                break;
+            case "PickUpTime": IncreaseTime(100);
+                break;
+        }
+        isTriggered = true;
+        
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        isTriggered = false;
+    }
 }
