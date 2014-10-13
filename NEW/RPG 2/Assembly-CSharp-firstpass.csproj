@@ -47,12 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Toon Detail.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\VillageHouse\Shader\TwoSided.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Outlined ToonBase.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\ToonBase.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Outlined ToonDetail.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

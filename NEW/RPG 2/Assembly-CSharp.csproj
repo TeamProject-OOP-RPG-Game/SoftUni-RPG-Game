@@ -46,17 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerController.cs" />
-     <Compile Include="Assets\Rotator.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ClickToMove.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Toon Detail.shader" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\VillageHouse\Shader\TwoSided.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Outlined ToonBase.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\ToonBase.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Outlined ToonDetail.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
