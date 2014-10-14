@@ -60,7 +60,7 @@
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\VillageHouse\Shader\TwoSided.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>D:/Github/OOP/trunk/NEW/RPG 2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/mitko/Desktop/SoftUni-RPG-Game/NEW/RPG 2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
