@@ -49,11 +49,12 @@
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ClickToMove.cs" />
      <Compile Include="Assets\Scripts\GeneratePickUps.cs" />
+     <Compile Include="Assets\Scripts\IMovable.cs" />
+     <Compile Include="Assets\Scripts\PickUp.cs" />
      <Compile Include="Assets\Scripts\Player\ICollidable.cs" />
      <Compile Include="Assets\Scripts\Player\IPlayer.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Task\IChance.cs" />
      <Compile Include="Assets\Task\ProblemType.cs" />
      <Compile Include="Assets\Task\Task.cs" />

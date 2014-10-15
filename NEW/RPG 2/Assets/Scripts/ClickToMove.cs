@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ClickToMove : MonoBehaviour
+public class ClickToMove : MonoBehaviour, IMoveable
 {
     public float speed = 6;
     public CharacterController controller;
@@ -23,7 +23,7 @@ public class ClickToMove : MonoBehaviour
         {
             locatePosition();
         }
-        moveToPosition();
+        Move();
     }
 
     void locatePosition()
@@ -39,7 +39,7 @@ public class ClickToMove : MonoBehaviour
         
         }
     }
-    void moveToPosition()
+    public void Move()
     {
         if (Vector3.Distance(transform.position, position) > 1)
         {
