@@ -12,7 +12,8 @@ public class Player : MonoBehaviour, IPlayer, ICollidable
             Debug.Log("Trigger Action");
         }
         isTriggered = false;
-		Solve ();
+		// TODO: Add event, when has collision with problem 
+		Solve (0.8);
     }
 
     private string name;
@@ -240,11 +241,16 @@ public class Player : MonoBehaviour, IPlayer, ICollidable
         isTriggered = false;
     }
 
-	public void Solve () 
+	public bool Solve(double chance)
 	{
-		Task.Task myTask = new Task.Task (Task.ProblemType.CSharp, 200.0);
-
-		double chanceToSolve = myTask.CalculateChanceToSolve (this.Knowledge);
-		Debug.Log (chanceToSolve);
+		var rand = new System.Random();
+		
+		bool isSuccsess = false;
+		if (rand.NextDouble() <= chance)
+		{
+			isSuccsess = true;
+			return isSuccsess;
+		}
+		return isSuccsess;
 	}
 }
