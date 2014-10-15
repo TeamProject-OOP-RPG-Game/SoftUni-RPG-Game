@@ -48,13 +48,21 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ClickToMove.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Toon Detail.shader" />
+     <Compile Include="Assets\Scripts\GeneratePickUps.cs" />
+     <Compile Include="Assets\Scripts\IMovable.cs" />
+     <Compile Include="Assets\Scripts\PickUp.cs" />
+     <Compile Include="Assets\Scripts\Player\ICollidable.cs" />
+     <Compile Include="Assets\Scripts\Player\IPlayer.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Task\IChance.cs" />
+     <Compile Include="Assets\Scripts\Task\ProblemType.cs" />
+     <Compile Include="Assets\Scripts\Task\Task.cs" />
+     <Compile Include="Assets\Scripts\Task\TaskGenerator.cs" />
+     <Compile Include="Assets\Scripts\Task\TypeOfDifficult.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\VillageHouse\Shader\TwoSided.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Outlined ToonBase.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\ToonBase.shader" />
-     <None Include="Assets\Scripts\IOS Toon Shaders\Outlined ToonDetail.shader" />
+     <None Include="Assets\mnogohome\readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/mitko/Desktop/SoftUni-RPG-Game/RPG 2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
