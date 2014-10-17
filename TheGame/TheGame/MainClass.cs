@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace TheGame
 {
-    static class Program
+    static class MainClass
     {
         /// <summary>
         /// The main entry point for the application.
@@ -17,6 +17,22 @@ namespace TheGame
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            Character[] characters = {
+				//new Player (),
+				//new Enemy (),
+				//new Enemy ()
+			};
+
+
+            var engine = new GameEngine();
+
+            foreach (var character in characters)
+            {
+                engine.Renderer.Draw(character);
+            }
+
+
         }
     }
 }

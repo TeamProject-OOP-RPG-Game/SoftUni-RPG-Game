@@ -8,6 +8,6 @@ namespace TheGame
 {
     interface IAttack
     {
-        void attack();
+        //void attack();
     }
 }

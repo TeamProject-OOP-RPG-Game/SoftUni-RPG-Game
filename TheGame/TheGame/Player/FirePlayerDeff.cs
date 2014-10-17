@@ -19,5 +19,7 @@ namespace TheGame.Player
 		{
 			this.ImagePath = imagePath;
 		}
+
+        
     }
 }

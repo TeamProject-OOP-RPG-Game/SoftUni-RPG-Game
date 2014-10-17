@@ -8,6 +8,6 @@ namespace TheGame
 {
     interface IDeffence
     {
-        void deffence();
+        //void deffence();
     }
 }

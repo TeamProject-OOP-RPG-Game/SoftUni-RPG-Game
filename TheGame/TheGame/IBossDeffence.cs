@@ -8,6 +8,6 @@ namespace TheGame
 {
     interface IBossDeffence
     {
-        void bossDefence();
+        //void bossDefence();
     }
 }
