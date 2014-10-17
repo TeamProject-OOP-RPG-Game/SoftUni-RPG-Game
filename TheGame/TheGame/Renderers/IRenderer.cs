@@ -7,4 +7,3 @@ namespace TheGame
 		void Draw(IDrawable gameObject);
 	}
 }
-
