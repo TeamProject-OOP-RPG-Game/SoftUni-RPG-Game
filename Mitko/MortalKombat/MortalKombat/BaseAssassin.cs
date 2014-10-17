@@ -1,12 +1,34 @@
 ﻿namespace MortalKombat
 {
+    using System;
     using MortalKombat.Interfaces;
     public abstract class BaseAssassin : BaseCharacter, IAssassin
     {
-        public BaseAssassin(string name, string description, int initialHealth, int initialSpeed, int initialDefense) 
-            : base(name, description, initialHealth, initialSpeed, initialDefense)
+
+        private int lifeSteal;
+
+        public BaseAssassin(string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal) 
+            : base(name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
         {
+            this.LifeSteal = initialLifeSteal;
             this.RageMode = false;
+        }
+
+        public int LifeSteal
+        {
+            get
+            {
+                return this.lifeSteal;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentOutOfRangeException("Assassin's lifesteal cannot be negative!");
+                }
+
+                this.lifeSteal = value;
+            }
         }
 
         public bool RageMode { get; set; }

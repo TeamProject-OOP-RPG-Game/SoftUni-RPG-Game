@@ -7,5 +7,7 @@
         int Health { get; set; }
         int Speed { get; set; }
         int Defense { get; set; }
+
+        int CriticalChance { get; set; }
     }
 }

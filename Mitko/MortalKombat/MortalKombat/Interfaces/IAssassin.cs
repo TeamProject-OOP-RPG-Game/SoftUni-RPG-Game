@@ -2,7 +2,8 @@
 {
     public interface IAssassin
     {
-        bool RageMode{ get; set; }
+        int LifeSteal { get; set; }
+        bool RageMode { get; set; }
         void ToggleRageMode();
     }
 }
