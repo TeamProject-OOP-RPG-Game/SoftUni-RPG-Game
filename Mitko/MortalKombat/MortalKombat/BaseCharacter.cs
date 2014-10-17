@@ -11,7 +11,7 @@
         private int speed;
         private int defense;
         private int criticalChance;
-
+        
         public BaseCharacter(string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
         {
             this.Name = initialName;

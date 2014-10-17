@@ -44,6 +44,7 @@
     <Compile Include="BaseAssassin.cs" />
     <Compile Include="BaseCharacter.cs" />
     <Compile Include="BaseBerserk.cs" />
+    <Compile Include="BaseSkill.cs" />
     <Compile Include="Interfaces\IAssassin.cs" />
     <Compile Include="Interfaces\IBerserk.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
