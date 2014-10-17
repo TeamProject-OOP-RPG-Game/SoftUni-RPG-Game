@@ -87,6 +87,7 @@
     <Compile Include="Interfaces\IBerserk.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
     <Compile Include="Interfaces\ISkills.cs" />
+    <Compile Include="MagicSkills.cs" />
     <Compile Include="Player\AirPlayer.cs" />
     <Compile Include="Player\AirPlayerAtt.cs" />
     <Compile Include="Player\AirPlayerDeff.cs" />

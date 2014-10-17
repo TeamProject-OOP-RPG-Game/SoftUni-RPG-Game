@@ -6,3 +6,9 @@ C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\bin\Debug\
 C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\bin\Debug\TheGame.pdb
 C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.exe
 C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.pdb
+C:\Users\Daniel\Desktop\TheGame\TheGame\bin\Debug\TheGame.exe.config
+C:\Users\Daniel\Desktop\TheGame\TheGame\obj\Debug\TheGame.exe
+C:\Users\Daniel\Desktop\TheGame\TheGame\obj\Debug\TheGame.pdb
+C:\Users\Daniel\Desktop\RPG\trunk\TheGame\TheGame\bin\Debug\TheGame.exe.config
+C:\Users\Daniel\Desktop\RPG\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
+C:\Users\Daniel\Desktop\RPG\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb
