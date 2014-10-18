@@ -68,11 +68,11 @@
     <Compile Include="Enemy\WaterEnemy.cs" />
     <Compile Include="Enemy\WaterEnemyAtt.cs" />
     <Compile Include="Enemy\WaterEnemyDeff.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="TheGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TheGame.Designer.cs">
+      <DependentUpon>TheGame.cs</DependentUpon>
     </Compile>
     <Compile Include="GameEngine.cs" />
     <Compile Include="GameObject.cs" />
@@ -111,8 +111,8 @@
     <Compile Include="Renderers\IRenderer.cs" />
     <Compile Include="Structure\SpriteType.cs" />
     <Compile Include="UI\PaintBrush.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TheGame.resx">
+      <DependentUpon>TheGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -136,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ZG9XI.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
