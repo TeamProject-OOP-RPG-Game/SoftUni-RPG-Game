@@ -45,15 +45,16 @@
     <Compile Include="BaseCharacter.cs" />
     <Compile Include="BaseBerserk.cs" />
     <Compile Include="BaseSkill.cs" />
+    <Compile Include="Characters\Alien.cs" />
     <Compile Include="Interfaces\IAssassin.cs" />
     <Compile Include="Interfaces\IBerserk.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
     <Compile Include="Interfaces\ISkills.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

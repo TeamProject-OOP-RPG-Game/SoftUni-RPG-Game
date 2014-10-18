@@ -1,2 +1,8 @@
 c:\users\mitko\documents\visual studio 2013\Projects\MortalKombat\MortalKombat\bin\Debug\MortalKombat.exe.config
 C:\Users\mitko\documents\visual studio 2013\Projects\MortalKombat\MortalKombat\obj\Debug\MortalKombat.csprojResolveAssemblyReference.cache
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\Mitko\MortalKombat\MortalKombat\bin\Debug\MortalKombat.exe.config
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\Mitko\MortalKombat\MortalKombat\obj\Debug\MortalKombat.csprojResolveAssemblyReference.cache
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\Mitko\MortalKombat\MortalKombat\bin\Debug\MortalKombat.exe
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\Mitko\MortalKombat\MortalKombat\bin\Debug\MortalKombat.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\Mitko\MortalKombat\MortalKombat\obj\Debug\MortalKombat.exe
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\Mitko\MortalKombat\MortalKombat\obj\Debug\MortalKombat.pdb

@@ -106,7 +106,7 @@
         }
         public void UseSkill(ICharacter Enemy)
         {
-            //TODO
+            Enemy.Health -= 60;
         }
     }
 }

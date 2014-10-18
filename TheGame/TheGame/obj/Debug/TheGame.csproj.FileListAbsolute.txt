@@ -32,3 +32,12 @@ C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\The
 C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\bin\Debug\TheGame.exe.config
 C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\obj\Debug\TheGame.exe
 C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\obj\Debug\TheGame.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\bin\Debug\TheGame.exe.config
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.exe
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\bin\Debug\TheGame.exe
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\bin\Debug\TheGame.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.TheGame.resources
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache

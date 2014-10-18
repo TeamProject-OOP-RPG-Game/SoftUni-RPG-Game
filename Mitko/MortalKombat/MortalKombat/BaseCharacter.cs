@@ -125,5 +125,9 @@
                 this.criticalChance = value;
             }
         }
+
+        public virtual void CastSkillOne(ICharacter Enemy)
+        {
+        }
     }
 }
