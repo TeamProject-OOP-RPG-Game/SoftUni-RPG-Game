@@ -20,3 +20,15 @@ C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources
 C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
 C:\Users\Valeri\Desktop\3\TheGame\TheGame\bin\Debug\TheGame.exe
 C:\Users\Valeri\Desktop\3\TheGame\TheGame\bin\Debug\TheGame.pdb
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\bin\Debug\TheGame.exe.config
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\bin\Debug\TheGame.exe
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\bin\Debug\TheGame.pdb
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb
+C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.TheGame.resources
+C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\bin\Debug\TheGame.exe.config
+C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\obj\Debug\TheGame.exe
+C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\obj\Debug\TheGame.pdb
