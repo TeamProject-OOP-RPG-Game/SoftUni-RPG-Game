@@ -17,8 +17,8 @@ namespace TheGame.UI
         private const int ProgressBarOffsetX = -3;
         private const int ProgressBarOffsetY = -10;
 
-        private const string PlayerImagePath = "../../SubZero.png";
-        private const string EnemyImagePath = "../../KingCold.png";
+        private const string PlayerImagePath = "SubZero.png";
+        private const string EnemyImagePath = "/../Images/KingCold.png";
 
         private Image playerImage, enemyImage;
         private Form gameWindow;
@@ -131,8 +131,9 @@ namespace TheGame.UI
 
         public void LoadResources()
         {
-            this.playerImage = Image.FromFile(PlayerImagePath);
-            this.enemyImage = Image.FromFile(EnemyImagePath);
+            this.enemyImage = Image.FromFile("../../Images/KidGoku.png");
+            this.playerImage = Image.FromFile("../../Images/KingCold.png");
+
             
         }
     }

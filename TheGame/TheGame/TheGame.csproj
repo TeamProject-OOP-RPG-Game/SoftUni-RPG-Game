@@ -114,8 +114,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\SubZero.png" />
-    <Content Include="UI\KidGoku.png" />
-    <Content Include="UI\KingCold.png" />
+    <Content Include="Images\KidGoku.png" />
+    <Content Include="Images\KingCold.png" />
     <Content Include="UI\SubZero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,55 +1,9 @@
-c:\users\valeri\documents\visual studio 2013\Projects\TheGame\TheGame\bin\Debug\TheGame.exe.config
-c:\users\valeri\documents\visual studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
-c:\users\valeri\documents\visual studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
-c:\users\valeri\documents\visual studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
-C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\bin\Debug\TheGame.exe
-C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\bin\Debug\TheGame.pdb
-C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\Valeri\Documents\Visual Studio 2013\Projects\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\Daniel\Desktop\TheGame\TheGame\bin\Debug\TheGame.exe.config
-C:\Users\Daniel\Desktop\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\Daniel\Desktop\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\Daniel\Desktop\RPG\trunk\TheGame\TheGame\bin\Debug\TheGame.exe.config
-C:\Users\Daniel\Desktop\RPG\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\Daniel\Desktop\RPG\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\bin\Debug\TheGame.exe.config
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\bin\Debug\TheGame.exe
-C:\Users\Valeri\Desktop\3\TheGame\TheGame\bin\Debug\TheGame.pdb
-<<<<<<< .mine
 D:\Github\OOP\trunk\TheGame\TheGame\bin\Debug\TheGame.exe.config
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb
-=======
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\bin\Debug\TheGame.exe.config
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\bin\Debug\TheGame.exe
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\bin\Debug\TheGame.pdb
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\Valeri\Desktop\SoftUni-RPG-Game.git\trunk\TheGame\TheGame\obj\Debug\TheGame.TheGame.resources
-C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\bin\Debug\TheGame.exe.config
-C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\Valeri\Desktop\New folder\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\bin\Debug\TheGame.exe.config
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.exe
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.pdb
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\bin\Debug\TheGame.exe
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\bin\Debug\TheGame.pdb
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.TheGame.resources
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
-C:\Users\mitko\Desktop\SoftUni-RPG-Game\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
->>>>>>> .r40
 D:\Github\OOP\trunk\TheGame\TheGame\bin\Debug\TheGame.exe
 D:\Github\OOP\trunk\TheGame\TheGame\bin\Debug\TheGame.pdb
 D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
 D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.TheGame.resources
 D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
 D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
+D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
+D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb

@@ -34,9 +34,11 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1974, 599);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Name = "TheGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TheGame";
+            this.Load += new System.EventHandler(this.TheGame_Load);
             this.ResumeLayout(false);
 
         }

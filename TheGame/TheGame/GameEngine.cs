@@ -9,7 +9,7 @@ namespace TheGame
         private IPaintInterface painter;
         public GameEngine(IUserInputInterface controller, IPaintInterface painter)
         {
-            this.SubscribeToUserInput(controller);
+            SubscribeToUserInput(controller);
             this.painter = painter;
 
         }
@@ -25,14 +25,8 @@ namespace TheGame
 
         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {
-            userInteface.OnLeftPressed += (sender, args) =>
-            {
-                this.MovePlayerLeft();
-            };
-            userInteface.OnRightPressed += (sender, args) =>
-            {
-                this.MovePlayerRight();
-            };
+            userInteface.OnLeftPressed += (sender, args) => this.MovePlayerLeft();
+            userInteface.OnRightPressed += (sender, args) => this.MovePlayerRight();
         }
 
         private void MovePlayerRight()
