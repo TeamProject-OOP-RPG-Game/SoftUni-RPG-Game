@@ -1,13 +1,15 @@
 ﻿using System;
+using TheGame.Renderers;
 
 namespace TheGame
 {
 	public interface IGameEngine
 	{
-		IRenderer Renderer {get; set;}
 
 		void StartGame();
 		void EndGame();
-	}
+
+        void Draw(IRenderable item);
+    }
 }
 

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheGame.Renderers;
+using TheGame.UI;
 
 namespace TheGame
 {
@@ -15,6 +17,23 @@ namespace TheGame
         public TheGame()
         {
             InitializeComponent();
+        }
+        private void GameWindow_Load(object sender, EventArgs e)
+        {
+            IUserInputInterface controller = new MouseController(this);
+            IPaintInterface painter = new PaintBrush(this);
+            IGameEngine engine = new GameEngine(controller, painter);
+
+            IRenderable[] characters = {
+			    new Player.Player(),
+				new Enemy.Enemy()
+
+			};
+
+            foreach (var character in characters)
+            {
+                engine.Draw(character);
+            }
         }
     }
 }

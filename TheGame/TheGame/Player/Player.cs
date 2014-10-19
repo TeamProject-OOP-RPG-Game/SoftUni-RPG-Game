@@ -4,10 +4,10 @@ namespace TheGame.Player
 {
 	public class Player:Character
 	{
-		private const string DefaultPlayerImagePath = "..//..//images/player.png";
+        //private const string DefaultPlayerImagePath = "..//..//images/King_Cold.png";
 
         public Player()
-            : this(DefaultPlayerImagePath)
+           // : this(DefaultPlayerImagePath)
 		{
 		}
 
@@ -15,6 +15,11 @@ namespace TheGame.Player
 		{
 			this.ImagePath = imagePath;
 		}
-	}
+
+        public void Draw()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 

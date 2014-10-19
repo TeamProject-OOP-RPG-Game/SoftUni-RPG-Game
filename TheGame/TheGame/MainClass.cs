@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheGame.Enemy;
 
 namespace TheGame
 {
@@ -17,20 +15,6 @@ namespace TheGame
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TheGame());
-
-            Character[] characters = {
-				//new Player (),
-				//new Enemy (),
-				//new Enemy ()
-			};
-
-
-            var engine = new GameEngine();
-
-            foreach (var character in characters)
-            {
-                engine.Renderer.Draw(character);
-            }
 
 
         }

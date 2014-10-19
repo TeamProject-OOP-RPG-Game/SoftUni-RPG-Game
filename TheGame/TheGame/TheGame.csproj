@@ -68,6 +68,8 @@
     <Compile Include="Enemy\WaterEnemy.cs" />
     <Compile Include="Enemy\WaterEnemyAtt.cs" />
     <Compile Include="Enemy\WaterEnemyDeff.cs" />
+    <Compile Include="IUserInputInterface.cs" />
+    <Compile Include="MouseController.cs" />
     <Compile Include="TheGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,10 +107,8 @@
     <Compile Include="Player\WaterPlayerDeff.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Renderers\ConsoleRenderer.cs" />
     <Compile Include="Renderers\IPaint.cs" />
     <Compile Include="Renderers\IRenderable.cs" />
-    <Compile Include="Renderers\IRenderer.cs" />
     <Compile Include="Structure\SpriteType.cs" />
     <Compile Include="UI\PaintBrush.cs" />
     <EmbeddedResource Include="TheGame.resx">
@@ -140,6 +140,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\ZG9XI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\KidGoku.png" />
+    <Content Include="UI\KingCold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

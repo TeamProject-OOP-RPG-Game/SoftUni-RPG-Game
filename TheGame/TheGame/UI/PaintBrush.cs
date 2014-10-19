@@ -17,8 +17,8 @@ namespace TheGame.UI
         private const int ProgressBarOffsetX = -3;
         private const int ProgressBarOffsetY = -10;
 
-        private const string PlayerImagePath = "../../Images/Kid_Goku.png";
-        private const string EnemyImagePath = "../../Images/King_Cold.png";
+        private const string PlayerImagePath = "/KidGoku.png";
+        private const string EnemyImagePath = "/KingCold.png";
 
         private Image playerImage, enemyImage;
         private Form gameWindow;

@@ -4,9 +4,9 @@ namespace TheGame.Enemy
 {
 	public class Enemy:Character
 	{
-		private const string DefaultEnemyImagePath = "..//..//enemy.png";
+        //private const string DefaultEnemyImagePath = "..//..//King_Cold.png";
 
-		public Enemy () : this (DefaultEnemyImagePath)
+		public Enemy ()  //this (DefaultEnemyImagePath)
 		{
 		}
 
@@ -14,6 +14,11 @@ namespace TheGame.Enemy
 		{
 			this.ImagePath = imagePath;
 		}
-	}
+
+        public void Draw()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
