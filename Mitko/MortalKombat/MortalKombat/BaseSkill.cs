@@ -2,7 +2,7 @@
 {
     using System;
     using MortalKombat.Interfaces;
-    public class BaseSkill
+    public class BaseSkill : ISkill
     {
         private string skillName;
         private string skillDescription;
@@ -104,7 +104,7 @@
                 this.damageMax = value;
             }
         }
-        public void UseSkill(ICharacter Enemy)
+        public void UseSkill(ICharacter Caster, ICharacter Enemy)
         {
             Enemy.Health -= 60;
         }

@@ -46,10 +46,12 @@
     <Compile Include="BaseBerserk.cs" />
     <Compile Include="BaseSkill.cs" />
     <Compile Include="Characters\Alien.cs" />
+    <Compile Include="Characters\JohnTheBaptist.cs" />
     <Compile Include="Interfaces\IAssassin.cs" />
     <Compile Include="Interfaces\IBerserk.cs" />
+    <Compile Include="Interfaces\ICaster.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
-    <Compile Include="Interfaces\ISkills.cs" />
+    <Compile Include="Interfaces\ISkill.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

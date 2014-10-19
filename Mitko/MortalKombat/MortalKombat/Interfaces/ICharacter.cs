@@ -1,6 +1,6 @@
 ﻿namespace MortalKombat.Interfaces
 {
-    public interface ICharacter : ISkills
+    public interface ICharacter
     {
         string Name { get; set; }
         string Description { get; set; }

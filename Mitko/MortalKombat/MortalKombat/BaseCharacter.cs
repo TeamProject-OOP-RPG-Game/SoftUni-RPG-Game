@@ -3,7 +3,7 @@
     using System;
     using MortalKombat.Interfaces;
 
-    public abstract class BaseCharacter : ICharacter, ISkills
+    public abstract class BaseCharacter : ICharacter, ICaster
     {
         private string name;
         private string description;
@@ -126,8 +126,12 @@
             }
         }
 
-        public virtual void CastSkillOne(ICharacter Enemy)
-        {
-        }
+        public abstract void CastSkillOne(ICharacter Enemy);
+
+        public abstract void CastSkillTwo(ICharacter Enemy);
+
+        public abstract void CastSkillThree(ICharacter Enemy);
+
+        public abstract void CastSkillFour(ICharacter Enemy);
     }
 }

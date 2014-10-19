@@ -24,6 +24,8 @@
                 {
                     throw new ArgumentOutOfRangeException("Berserk's stun chance cannot be negative!");
                 }
+
+                this.stunChance = value;
             }
         }
         public bool DefenseMode { get; set; }
