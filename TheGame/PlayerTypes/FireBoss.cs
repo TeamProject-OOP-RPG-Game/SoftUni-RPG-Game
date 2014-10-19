@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace TheGame.Enemy
 {
-    abstract class Boss:Enemy
+    class FireBoss:Boss, IBossAttack, IBossDeffence
     {
-        public Boss(int X, int Y, int SizeX, int SizeY)
-            : base(X, Y, SizeX, SizeY) 
+        public FireBoss()
 		{
 		}
     }

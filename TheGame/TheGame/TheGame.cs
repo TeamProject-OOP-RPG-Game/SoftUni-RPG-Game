@@ -18,15 +18,15 @@ namespace TheGame
         {
             InitializeComponent();
         }
-        private void GameWindow_Load(object sender, EventArgs e)
+        private void TheGame_Load(object sender, EventArgs e)
         {
             IUserInputInterface controller = new MouseController(this);
             IPaintInterface painter = new PaintBrush(this);
             IGameEngine engine = new GameEngine(controller, painter);
 
             IRenderable[] characters = {
-			    new Player.Player(),
-				new Enemy.Enemy()
+			    new Player.Player(100, 100, 20, 20),
+				new Enemy.Enemy(200, 100, 20, 20)
 
 			};
 

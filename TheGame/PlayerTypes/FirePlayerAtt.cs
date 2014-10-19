@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheGame.Enemy
+namespace TheGame.Player
 {
-    abstract class Boss:Enemy
+    class FirePlayerAtt:FirePlayer, IAttack
     {
-        public Boss(int X, int Y, int SizeX, int SizeY)
-            : base(X, Y, SizeX, SizeY) 
+        public FirePlayerAtt()
 		{
 		}
     }

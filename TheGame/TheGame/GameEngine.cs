@@ -33,11 +33,6 @@ namespace TheGame
             {
                 this.MovePlayerRight();
             };
-//            userInteface.OnSpellOnePressed += (sender, args) =>
-//            {
-//                var spellArgs = args as SpellCastEventArgs;
-//                this.CastPlayerSpell(0, spellArgs.CastX, spellArgs.CastY);
-//            };
         }
 
         private void MovePlayerRight()

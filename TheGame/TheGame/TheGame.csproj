@@ -49,25 +49,8 @@
     <Compile Include="BaseCharacter.cs" />
     <Compile Include="BaseSkill.cs" />
     <Compile Include="Character.cs" />
-    <Compile Include="Enemy\AirBoss.cs" />
-    <Compile Include="Enemy\AirEnemy.cs" />
-    <Compile Include="Enemy\AirEnemyAtt.cs" />
-    <Compile Include="Enemy\AirEnemyDeff.cs" />
     <Compile Include="Enemy\Boss.cs" />
-    <Compile Include="Enemy\ComboBoss.cs" />
-    <Compile Include="Enemy\EarthBoss.cs" />
-    <Compile Include="Enemy\EarthEnemy.cs" />
-    <Compile Include="Enemy\EarthEnemyAtt.cs" />
-    <Compile Include="Enemy\EarthEnemyDeff.cs" />
     <Compile Include="Enemy\Enemy.cs" />
-    <Compile Include="Enemy\FireBoss.cs" />
-    <Compile Include="Enemy\FireEnemy.cs" />
-    <Compile Include="Enemy\FireEnemyAtt.cs" />
-    <Compile Include="Enemy\FireEnemyDeff.cs" />
-    <Compile Include="Enemy\WaterBoss.cs" />
-    <Compile Include="Enemy\WaterEnemy.cs" />
-    <Compile Include="Enemy\WaterEnemyAtt.cs" />
-    <Compile Include="Enemy\WaterEnemyDeff.cs" />
     <Compile Include="IUserInputInterface.cs" />
     <Compile Include="MouseController.cs" />
     <Compile Include="TheGame.cs">
@@ -92,22 +75,10 @@
     <Compile Include="Interfaces\ISkills.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
     <Compile Include="MagicSkills.cs" />
-    <Compile Include="Player\AirPlayer.cs" />
-    <Compile Include="Player\AirPlayerAtt.cs" />
-    <Compile Include="Player\AirPlayerDeff.cs" />
-    <Compile Include="Player\EarthPlayer.cs" />
-    <Compile Include="Player\EarthPlayerAtt.cs" />
-    <Compile Include="Player\EarthPlayerDef.cs" />
-    <Compile Include="Player\FirePlayer.cs" />
-    <Compile Include="Player\FirePlayerAtt.cs" />
-    <Compile Include="Player\FirePlayerDeff.cs" />
     <Compile Include="Player\Player.cs" />
-    <Compile Include="Player\WaterPlayer.cs" />
-    <Compile Include="Player\WaterPlayerAtt.cs" />
-    <Compile Include="Player\WaterPlayerDeff.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Renderers\IPaint.cs" />
+    <Compile Include="Renderers\IPaintInterface.cs" />
     <Compile Include="Renderers\IRenderable.cs" />
     <Compile Include="Structure\SpriteType.cs" />
     <Compile Include="UI\PaintBrush.cs" />
@@ -142,8 +113,10 @@
     <None Include="Images\ZG9XI.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\SubZero.png" />
     <Content Include="UI\KidGoku.png" />
     <Content Include="UI\KingCold.png" />
+    <Content Include="UI\SubZero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

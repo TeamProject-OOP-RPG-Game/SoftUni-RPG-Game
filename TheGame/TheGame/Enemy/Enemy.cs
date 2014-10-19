@@ -1,24 +1,16 @@
 ﻿using System;
+using TheGame.Renderers;
+using TheGame.Structure;
 
 namespace TheGame.Enemy
 {
-	public class Enemy:Character
+	public class Enemy : Character
 	{
-        //private const string DefaultEnemyImagePath = "..//..//King_Cold.png";
-
-		public Enemy ()  //this (DefaultEnemyImagePath)
+        public Enemy(int X, int Y, int SizeX, int SizeY)
+            : base(X, Y, SizeX, SizeY) 
 		{
 		}
 
-		public Enemy (string imagePath)
-		{
-			this.ImagePath = imagePath;
-		}
-
-        public void Draw()
-        {
-            throw new NotImplementedException();
-        }
-    }
+	}
 }
 

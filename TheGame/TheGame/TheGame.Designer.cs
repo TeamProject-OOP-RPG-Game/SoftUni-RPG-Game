@@ -33,8 +33,6 @@
             // TheGame
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::TheGame.Properties.Resources.ZG9XI;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1974, 599);
             this.Name = "TheGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

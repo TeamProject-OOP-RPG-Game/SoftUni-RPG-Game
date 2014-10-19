@@ -1,25 +1,15 @@
 ﻿using System;
+using System.Windows.Forms;
+using TheGame.Structure;
 
 namespace TheGame.Player
 {
 	public class Player:Character
 	{
-        //private const string DefaultPlayerImagePath = "..//..//images/King_Cold.png";
-
-        public Player()
-           // : this(DefaultPlayerImagePath)
+        public Player(int X, int Y, int SizeX, int SizeY)
+            :base (X, Y, SizeX, SizeY)
 		{
 		}
-
-        public Player(string imagePath)
-		{
-			this.ImagePath = imagePath;
-		}
-
-        public void Draw()
-        {
-            throw new NotImplementedException();
-        }
-    }
+	}
 }
 

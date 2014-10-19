@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace TheGame.Enemy
 {
-    abstract class Boss:Enemy
+    class FireEnemyDeff:FireEnemy, IDeffence
     {
-        public Boss(int X, int Y, int SizeX, int SizeY)
-            : base(X, Y, SizeX, SizeY) 
+        public FireEnemyDeff()
 		{
 		}
     }

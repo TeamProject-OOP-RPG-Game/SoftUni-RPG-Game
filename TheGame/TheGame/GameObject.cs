@@ -2,11 +2,10 @@
 
 namespace TheGame
 {
-	public abstract class GameObject: IDrawable
-	{
-		public GameObject ()
-		{
-		}
-	}
+    public abstract class GameObject : IDrawable
+    {
+        public GameObject()
+        {
+        }
+    }
 }
-
