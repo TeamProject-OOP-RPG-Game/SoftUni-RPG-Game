@@ -1,9 +1,0 @@
-D:\Github\OOP\trunk\TheGame\TheGame\bin\Debug\TheGame.exe.config
-D:\Github\OOP\trunk\TheGame\TheGame\bin\Debug\TheGame.exe
-D:\Github\OOP\trunk\TheGame\TheGame\bin\Debug\TheGame.pdb
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.csprojResolveAssemblyReference.cache
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.TheGame.resources
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.Properties.Resources.resources
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.csproj.GenerateResource.Cache
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.exe
-D:\Github\OOP\trunk\TheGame\TheGame\obj\Debug\TheGame.pdb
