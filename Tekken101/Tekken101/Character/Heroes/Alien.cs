@@ -38,7 +38,7 @@
         {
             BaseSkill AttackFour = new BaseSkill("Virus Injection", DestriptionSkillFour, 20, 70, 100);
             AttackFour.UseSkill(this, Enemy);
-            this.CurrentHealthPoints -= 20;
+            this.CurrentHealth -= 20;
         }
     }
 }

@@ -1,12 +1,11 @@
 ﻿
 
-using Tekken101.Renderer;
-
-namespace Tekken101
+namespace Tekken101.Engine
 {
     using System;
     using Characters;
     using Interfaces;
+    using Tekken101.Renderer;
 
     public class GameEngine : IGameEngine
     {
@@ -55,6 +54,11 @@ namespace Tekken101
         public void PlayNextTurn()
         {
             
+        }
+
+        public static void Move(int x)
+        {
+    
         }
     }
 }

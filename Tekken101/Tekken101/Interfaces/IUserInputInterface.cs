@@ -1,6 +1,4 @@
-﻿
-
-namespace Tekken101
+﻿namespace Tekken101
 {
     using System;
     public interface IUserInputInterface

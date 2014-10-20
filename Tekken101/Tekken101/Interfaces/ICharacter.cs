@@ -6,8 +6,8 @@
     {
         string Name { get; set; }
         string Description { get; set; }
-        int CurrentHealthPoints { get; set; }
-        int MaxHealthPoints { get; set; }
+        int CurrentHealth { get; set; }
+        int MaxHealth { get; set; }
         int Speed { get; set; }
         int Defense { get; set; }
         int CriticalChance { get; set; }

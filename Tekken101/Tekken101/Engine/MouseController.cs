@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Tekken101
+namespace Tekken101.Engine
 {
     public class MouseController : IUserInputInterface
     {
@@ -22,18 +22,7 @@ namespace Tekken101
 
         private void FormMouseClick(object sender, MouseEventArgs e)
         {
-            switch (e.Button)
-            {
-                case MouseButtons.Left:
-                    if (OnSpellOnePressed != null)
-                    {
-//                        this.OnSpellOnePressed(
-//                            this, new SpellCastEventArgs(e.X, e.Y));
-                    }
-                    break;
-                default:
-                    break;
-            }
+            
         }
 
         private void FormKeyDown(object sender, KeyEventArgs e)

@@ -4,6 +4,7 @@
     using System.Windows.Forms;
     using Interfaces;
     using Renderer;
+    using Tekken101.Engine;
 
     public partial class TheGame : Form
     {
@@ -25,6 +26,16 @@
             };
 
             timer.Start();
+        }
+
+        private void Right_Click(object sender, EventArgs e)
+        {
+            GameEngine.Move(50);
+        }
+
+        private void Left_Click(object sender, EventArgs e)
+        {
+            GameEngine.Move(-50);
         }
     }
 }

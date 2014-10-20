@@ -10,10 +10,11 @@
 
     public class PaintBrush : IPaintInterface
     {
-        private const int ProgressBarSizeX = 60;
-        private const int ProgressBarSizeY = 8;
-        private const int ProgressBarOffsetX = -3;
-        private const int ProgressBarOffsetY = -10;
+        private const int ProgressBarSizeX = 500;
+        private const int ProgressBarSizeY = 50;
+        private const int ProgressBarY = 10;
+        private const int ProgressBarEnemyX = 690;
+        private const int ProgressBarPlayerX = 10;
 
         private const string PlayerImagePath = "../../Images/asukaS.png";
         private const string EnemyImagePath = "../../Images/KidGoku.png";
@@ -36,7 +37,14 @@
             this.CreatePictureBox(renderableObject);
             if (renderableObject is BaseCharacter)
             {
-                this.CreateProgressBar(renderableObject as BaseCharacter);
+                if (renderableObject.SpriteType == SpriteType.Player)
+                {
+                    this.CreateProgressBar(renderableObject as BaseCharacter, ProgressBarPlayerX);
+                }
+                else if (renderableObject.SpriteType == SpriteType.Enemy)
+                {
+                    this.CreateProgressBar(renderableObject as BaseCharacter, ProgressBarEnemyX);
+                }
             }
         }
 
@@ -58,23 +66,21 @@
             var newCoordinates = new Point(objectToBeRedrawn.X, objectToBeRedrawn.Y);
             var picBox = GetPictureBoxByObject(objectToBeRedrawn);
             picBox.Location = newCoordinates;
-
             if (objectToBeRedrawn is BaseCharacter)
             {
                 var character = objectToBeRedrawn as BaseCharacter;
                 var progressBar = GetProgressBarByObject(character);
-                this.SetProgressBarLocation(character, progressBar);
-                progressBar.Value = character.CurrentHealthPoints;
+                progressBar.Value = character.CurrentHealth;
             }
         }
 
-        private void CreateProgressBar(BaseCharacter character)
+        private void CreateProgressBar(BaseCharacter character, int prograssBarX)
         {
             var progressBar = new ProgressBar();
             progressBar.Size = new Size(ProgressBarSizeX, ProgressBarSizeY);
-            this.SetProgressBarLocation(character, progressBar);
-            progressBar.Maximum = character.MaxHealthPoints;
-            progressBar.Value = character.CurrentHealthPoints;
+            progressBar.Location = new Point(prograssBarX, ProgressBarY);
+            progressBar.Maximum = character.MaxHealth;
+            progressBar.Value = character.CurrentHealth;
             progressBar.Tag = character;
             progressBars.Add(progressBar);
             this.gameWindow.Controls.Add(progressBar);
@@ -92,11 +98,6 @@
             picBox.Tag = renderableObject;
             this.pictureBoxes.Add(picBox);
             this.gameWindow.Controls.Add(picBox);
-        }
-
-        private void SetProgressBarLocation(BaseCharacter character, ProgressBar progressBar)
-        {
-            progressBar.Location = new Point(character.X + ProgressBarOffsetX, character.Y + ProgressBarOffsetY);
         }
 
         private Image GetSpriteImage(IRenderable renderableObject)

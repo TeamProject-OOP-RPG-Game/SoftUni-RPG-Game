@@ -108,7 +108,7 @@ namespace Tekken101.Characters
         }
         public void UseSkill(ICharacter Caster, ICharacter Enemy)
         {
-            Enemy.CurrentHealthPoints -= 60;
+            Enemy.CurrentHealth -= 60;
         }
     }
 }

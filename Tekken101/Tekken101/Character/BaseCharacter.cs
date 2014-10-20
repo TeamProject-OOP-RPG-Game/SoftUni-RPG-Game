@@ -6,15 +6,15 @@ namespace Tekken101.Characters
     using Tekken101;
     using Interfaces;
 
-    public abstract class BaseCharacter : GameObject, ICharacter, ICaster
+    public abstract class BaseCharacter : GameObject, ICharacter, IMovable, ICaster
     {
         private const int InitialSizeX = 160;
         private const int InitialSizeY = 350;
         private const int InitialY = 150;
-
         private string name;
         private string description;
-        private int health;
+        private int currentHealth;
+        private int maxHealth;
         private int speed;
         private int defense;
         private int criticalChance;
@@ -25,7 +25,8 @@ namespace Tekken101.Characters
         {
             this.Name = initialName;
             this.Description = description;
-            this.CurrentHealthPoints = initialHealth;
+            this.CurrentHealth = initialHealth;
+            this.MaxHealth = initialHealth;
             this.Speed = initialSpeed;
             this.Defense = initialDefense;
             this.CriticalChance = initialCriticalChance;
@@ -38,23 +39,6 @@ namespace Tekken101.Characters
         public int SizeX { get; set; }
 
         public int SizeY { get; set; }
-
-        public int MaxHealthPoints
-        {
-            get
-            {
-                return this.maxHealthPoints;
-            }
-            set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentNullException("BaseCharacter max health cannot be negative!");
-                }
-
-                this.maxHealthPoints = value;
-            }
-        }
 
         public string Name
         {
@@ -91,11 +75,11 @@ namespace Tekken101.Characters
             }
         }
 
-        public int CurrentHealthPoints
+        public int CurrentHealth
         {
             get
             {
-                return this.health;
+                return this.currentHealth;
             }
 
             set
@@ -105,7 +89,25 @@ namespace Tekken101.Characters
                     throw new ArgumentNullException("BaseCharacter health cannot be negative!");
                 }
 
-                this.health = value;
+                this.currentHealth = value;
+            }
+        }
+
+        public int MaxHealth
+        {
+            get
+            {
+                return this.maxHealth;
+            }
+
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentNullException("BaseCharacter health cannot be negative!");
+                }
+
+                this.maxHealth = value;
             }
         }
 
@@ -168,6 +170,11 @@ namespace Tekken101.Characters
 
         public abstract void CastSkillFour(ICharacter Enemy);
 
-        
+
+
+        public void Move(int x)
+        {
+            this.X += x;
+        }
     }
 }

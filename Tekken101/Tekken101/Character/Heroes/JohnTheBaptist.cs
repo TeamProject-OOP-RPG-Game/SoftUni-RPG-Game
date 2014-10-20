@@ -38,7 +38,7 @@
         {
             BaseSkill AttackFour = new BaseSkill("Divine Ambush", DestriptionSkillFour, 60, 20, 70);
             AttackFour.UseSkill(this, Enemy);
-            this.CurrentHealthPoints -= 100;
+            this.CurrentHealth -= 100;
         }
     }
 }
