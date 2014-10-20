@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -16,13 +17,25 @@ namespace Tekken101.Engine
 
         public MouseController(Form form)
         {
-            form.KeyDown += FormKeyDown;
+            var pb = new PictureBox();
+            pb.Size = new Size(400, 400);
+            pb.Location = new Point(0, 0);
+            form.Controls.Add(pb);
+            pb.MouseClick += ButtonMouseClick;
             form.MouseClick += FormMouseClick;
+        }
+
+        private void ButtonMouseClick(object sender, MouseEventArgs e)
+        {
+            if (this.OnLeftPressed != null)
+            {
+                this.OnLeftPressed(this, new EventArgs());
+            }
         }
 
         private void FormMouseClick(object sender, MouseEventArgs e)
         {
-            
+ 
         }
 
         private void FormKeyDown(object sender, KeyEventArgs e)

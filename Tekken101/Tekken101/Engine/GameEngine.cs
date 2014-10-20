@@ -44,21 +44,18 @@ namespace Tekken101.Engine
 
         private void MovePlayerRight()
         {
-            throw new NotImplementedException();
+            player.Move(50);
+            painter.RedrawObject(player);
         }
 
         private void MovePlayerLeft()
         {
-            throw new NotImplementedException();
+            player.Move(-50);    
+            painter.RedrawObject(player);
         }
         public void PlayNextTurn()
         {
-            
-        }
-
-        public static void Move(int x)
-        {
-    
+            painter.RedrawObject(player);
         }
     }
 }

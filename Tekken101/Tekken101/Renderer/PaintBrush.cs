@@ -98,7 +98,7 @@
             picBox.Tag = renderableObject;
             this.pictureBoxes.Add(picBox);
             this.gameWindow.Controls.Add(picBox);
-        }
+        } 
 
         private Image GetSpriteImage(IRenderable renderableObject)
         {

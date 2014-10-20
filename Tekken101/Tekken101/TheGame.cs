@@ -17,7 +17,6 @@
             IUserInputInterface controller = new MouseController(this);
             IPaintInterface painter = new PaintBrush(this);
             IGameEngine engine = new GameEngine(controller, painter);
-
             Timer timer = new Timer();
             timer.Interval = 100;
             timer.Tick += (s, args) =>
@@ -26,16 +25,6 @@
             };
 
             timer.Start();
-        }
-
-        private void Right_Click(object sender, EventArgs e)
-        {
-            GameEngine.Move(50);
-        }
-
-        private void Left_Click(object sender, EventArgs e)
-        {
-            GameEngine.Move(-50);
         }
     }
 }
