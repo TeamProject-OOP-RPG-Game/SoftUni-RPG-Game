@@ -32,12 +32,12 @@
             // 
             // TheGame
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1974, 599);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(784, 425);
             this.Name = "TheGame";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TheGame";
+            this.Text = "RPG Game";
             this.Load += new System.EventHandler(this.TheGame_Load);
             this.ResumeLayout(false);
 

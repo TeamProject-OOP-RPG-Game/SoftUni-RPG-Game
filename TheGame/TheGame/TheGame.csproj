@@ -116,7 +116,8 @@
     <Content Include="Images\SubZero.png" />
     <Content Include="Images\KidGoku.png" />
     <Content Include="Images\KingCold.png" />
-    <Content Include="UI\SubZero.png" />
+    <Content Include="mage.png" />
+    <Content Include="SubZero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

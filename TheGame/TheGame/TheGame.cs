@@ -24,16 +24,14 @@ namespace TheGame
             IPaintInterface painter = new PaintBrush(this);
             IGameEngine engine = new GameEngine(controller, painter);
 
-            IRenderable[] characters = {
-			    new Player.Player(100, 100, 20, 20),
-				new Enemy.Enemy(200, 100, 20, 20)
-
-			};
-
-            foreach (var character in characters)
+            Timer timer = new Timer();
+            timer.Interval = 100;
+            timer.Tick += (s, args) =>
             {
-                engine.Draw(character);
-            }
+                engine.PlayNextTurn();
+            };
+
+            timer.Start();
         }
     }
 }

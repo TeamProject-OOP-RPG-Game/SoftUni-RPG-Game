@@ -131,8 +131,8 @@ namespace TheGame.UI
 
         public void LoadResources()
         {
-            this.enemyImage = Image.FromFile("../../Images/KidGoku.png");
-            this.playerImage = Image.FromFile("../../Images/KingCold.png");
+            this.enemyImage = Image.FromFile("mage.png");
+            this.playerImage = Image.FromFile("SubZero.png");
 
             
         }

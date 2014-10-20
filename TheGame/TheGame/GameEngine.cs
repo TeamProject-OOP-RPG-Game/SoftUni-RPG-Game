@@ -7,11 +7,21 @@ namespace TheGame
     public class GameEngine : IGameEngine
     {
         private IPaintInterface painter;
+        private Character player;
+        private Character enemy;
         public GameEngine(IUserInputInterface controller, IPaintInterface painter)
         {
             SubscribeToUserInput(controller);
+            InitializeCharacters();
             this.painter = painter;
+            painter.AddObject(player);
+            painter.AddObject(enemy);
+        }
 
+        private void InitializeCharacters()
+        {
+            player = new Player.Player(100, 100, 20, 20);
+            enemy = new Enemy.Enemy(200, 100, 20, 20);
         }
 
         public void StartGame()
@@ -42,6 +52,12 @@ namespace TheGame
         public void Draw(IRenderable item)
         {
              painter.AddObject(item);
+        }
+
+
+        public void PlayNextTurn()
+        {
+            
         }
     }
 }

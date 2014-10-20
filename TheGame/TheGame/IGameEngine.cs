@@ -10,6 +10,8 @@ namespace TheGame
 		void EndGame();
 
         void Draw(IRenderable item);
+
+        void PlayNextTurn();
     }
 }
 
