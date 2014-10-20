@@ -1,12 +1,13 @@
-﻿namespace MortalKombat
+﻿namespace Tekken101.Characters
 {
     using System;
-    using MortalKombat.Interfaces;
+    using Interfaces;
+
     public abstract class BaseBerserk : BaseCharacter, IBerserk
     {
         private int stunChance;
-        public BaseBerserk(string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance) 
-            : base(initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
+        public BaseBerserk(int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance) 
+            : base(X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
         {
             this.DefenseMode = false;
         }

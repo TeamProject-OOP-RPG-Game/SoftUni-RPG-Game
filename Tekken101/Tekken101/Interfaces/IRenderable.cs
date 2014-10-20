@@ -1,8 +1,7 @@
-﻿using TheGame.Interfaces;
-using TheGame.Structure;
-
-namespace TheGame.Renderers
+﻿namespace Tekken101.Interfaces
 {
+    using Renderer;
+
     public interface IRenderable : IGameObject
     {
         SpriteType SpriteType { get; set; }

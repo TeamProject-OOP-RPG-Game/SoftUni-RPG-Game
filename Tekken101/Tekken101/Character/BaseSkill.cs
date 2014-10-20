@@ -1,7 +1,9 @@
-﻿namespace MortalKombat
+﻿
+
+namespace Tekken101.Characters
 {
     using System;
-    using MortalKombat.Interfaces;
+    using Interfaces;
     public class BaseSkill : ISkill
     {
         private string skillName;
@@ -106,7 +108,7 @@
         }
         public void UseSkill(ICharacter Caster, ICharacter Enemy)
         {
-            Enemy.Health -= 60;
+            Enemy.CurrentHealthPoints -= 60;
         }
     }
 }

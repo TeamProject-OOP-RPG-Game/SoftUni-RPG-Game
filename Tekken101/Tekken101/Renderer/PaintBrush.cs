@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Drawing;
-using System.Windows.Forms;
-using TheGame.Interfaces;
-using TheGame.Renderers;
-using TheGame.Structure;
-
-
-namespace TheGame.UI
+﻿namespace Tekken101.Renderer
 {
+
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using Interfaces;
+    using Characters;
+
     public class PaintBrush : IPaintInterface
     {
         private const int ProgressBarSizeX = 60;
@@ -17,7 +15,7 @@ namespace TheGame.UI
         private const int ProgressBarOffsetX = -3;
         private const int ProgressBarOffsetY = -10;
 
-        private const string PlayerImagePath = "../../Images/SubZero.png";
+        private const string PlayerImagePath = "../../Images/asukaS.png";
         private const string EnemyImagePath = "../../Images/KidGoku.png";
 
         private Image playerImage, enemyImage;
@@ -36,9 +34,9 @@ namespace TheGame.UI
         public void AddObject(IRenderable renderableObject)
         {
             this.CreatePictureBox(renderableObject);
-            if (renderableObject is IUnit)
+            if (renderableObject is BaseCharacter)
             {
-                this.CreateProgressBar(renderableObject as IUnit);
+                this.CreateProgressBar(renderableObject as BaseCharacter);
             }
         }
 
@@ -47,9 +45,9 @@ namespace TheGame.UI
             var picBox = GetPictureBoxByObject(renderableObject);
             this.gameWindow.Controls.Remove(picBox);
             this.pictureBoxes.Remove(picBox);
-            if (renderableObject is IUnit)
+            if (renderableObject is BaseCharacter)
             {
-                var progressBar = GetProgressBarByObject(renderableObject as IUnit);
+                var progressBar = GetProgressBarByObject(renderableObject as BaseCharacter);
                 this.gameWindow.Controls.Remove(progressBar);
                 this.progressBars.Remove(progressBar);
             }
@@ -61,23 +59,23 @@ namespace TheGame.UI
             var picBox = GetPictureBoxByObject(objectToBeRedrawn);
             picBox.Location = newCoordinates;
 
-            if (objectToBeRedrawn is IUnit)
+            if (objectToBeRedrawn is BaseCharacter)
             {
-                var unit = objectToBeRedrawn as IUnit;
-                var progressBar = GetProgressBarByObject(unit);
-                this.SetProgressBarLocation(unit, progressBar);
-                progressBar.Value = unit.CurrentHealthPoints;
+                var character = objectToBeRedrawn as BaseCharacter;
+                var progressBar = GetProgressBarByObject(character);
+                this.SetProgressBarLocation(character, progressBar);
+                progressBar.Value = character.CurrentHealthPoints;
             }
         }
 
-        private void CreateProgressBar(IUnit unit)
+        private void CreateProgressBar(BaseCharacter character)
         {
             var progressBar = new ProgressBar();
             progressBar.Size = new Size(ProgressBarSizeX, ProgressBarSizeY);
-            this.SetProgressBarLocation(unit, progressBar);
-            progressBar.Maximum = unit.MaximumHealthPoints;
-            progressBar.Value = unit.CurrentHealthPoints;
-            progressBar.Tag = unit;
+            this.SetProgressBarLocation(character, progressBar);
+            progressBar.Maximum = character.MaxHealthPoints;
+            progressBar.Value = character.CurrentHealthPoints;
+            progressBar.Tag = character;
             progressBars.Add(progressBar);
             this.gameWindow.Controls.Add(progressBar);
         }
@@ -96,9 +94,9 @@ namespace TheGame.UI
             this.gameWindow.Controls.Add(picBox);
         }
 
-        private void SetProgressBarLocation(IUnit unit, ProgressBar progressBar)
+        private void SetProgressBarLocation(BaseCharacter character, ProgressBar progressBar)
         {
-            progressBar.Location = new Point(unit.X + ProgressBarOffsetX, unit.Y + ProgressBarOffsetY);
+            progressBar.Location = new Point(character.X + ProgressBarOffsetX, character.Y + ProgressBarOffsetY);
         }
 
         private Image GetSpriteImage(IRenderable renderableObject)
@@ -124,9 +122,9 @@ namespace TheGame.UI
             return this.pictureBoxes.First(p => p.Tag == renderableObject);
         }
 
-        private ProgressBar GetProgressBarByObject(IUnit unit)
+        private ProgressBar GetProgressBarByObject(BaseCharacter character)
         {
-            return this.progressBars.First(p => p.Tag == unit);
+            return this.progressBars.First(p => p.Tag == character);
         }
 
         public void LoadResources()

@@ -1,4 +1,4 @@
-﻿namespace TheGame
+﻿namespace Tekken101
 {
     partial class TheGame
     {
@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(784, 425);
+            this.ClientSize = new System.Drawing.Size(1200 , 600);
             this.Name = "TheGame";
             this.Text = "RPG Game";
             this.Load += new System.EventHandler(this.TheGame_Load);

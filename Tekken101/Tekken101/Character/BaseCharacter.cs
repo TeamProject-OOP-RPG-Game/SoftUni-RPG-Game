@@ -1,25 +1,59 @@
-﻿namespace MortalKombat
+﻿
+
+namespace Tekken101.Characters
 {
     using System;
-    using MortalKombat.Interfaces;
+    using Tekken101;
+    using Interfaces;
 
-    public abstract class BaseCharacter : ICharacter, ICaster
+    public abstract class BaseCharacter : GameObject, ICharacter, ICaster
     {
+        private const int InitialSizeX = 160;
+        private const int InitialSizeY = 350;
+        private const int InitialY = 150;
+
         private string name;
         private string description;
         private int health;
         private int speed;
         private int defense;
         private int criticalChance;
+        private int maxHealthPoints;
         
-        public BaseCharacter(string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
+        public BaseCharacter(int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
+            :base (X, InitialY, InitialSizeX, InitialSizeY)
         {
             this.Name = initialName;
             this.Description = description;
-            this.Health = initialHealth;
+            this.CurrentHealthPoints = initialHealth;
             this.Speed = initialSpeed;
             this.Defense = initialDefense;
             this.CriticalChance = initialCriticalChance;
+        }
+
+        public int X { get; set; }
+
+        public int Y { get; set; }
+
+        public int SizeX { get; set; }
+
+        public int SizeY { get; set; }
+
+        public int MaxHealthPoints
+        {
+            get
+            {
+                return this.maxHealthPoints;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentNullException("BaseCharacter max health cannot be negative!");
+                }
+
+                this.maxHealthPoints = value;
+            }
         }
 
         public string Name
@@ -57,7 +91,7 @@
             }
         }
 
-        public int Health
+        public int CurrentHealthPoints
         {
             get
             {
@@ -133,5 +167,7 @@
         public abstract void CastSkillThree(ICharacter Enemy);
 
         public abstract void CastSkillFour(ICharacter Enemy);
+
+        
     }
 }

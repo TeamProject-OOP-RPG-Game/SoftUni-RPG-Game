@@ -1,6 +1,9 @@
-﻿namespace MortalKombat.Characters
+﻿
+
+namespace Tekken101.Characters
 {
-    using MortalKombat.Interfaces;
+    using Interfaces;
+    using Tekken101.Renderer;
 
     public class Alien : BaseAssassin
     {
@@ -9,10 +12,10 @@
         private const string DestriptionSkillThree = "Devours the target causing enormous amount of damage: /n10% hit chance /n80-90 damage";
         private const string DestriptionSkillFour = "Virus Injection: /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
 
-        public Alien(string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
-            : base(name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
+        public Alien(SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
+            : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
         {
-
+            this.SpriteType = type;
         }
 
         public override void CastSkillOne(ICharacter Enemy)
@@ -37,7 +40,7 @@
         {
             BaseSkill AttackFour = new BaseSkill("Virus Injection", DestriptionSkillFour, 20, 70, 100);
             AttackFour.UseSkill(this, Enemy);
-            this.Health -= 20;
+            this.CurrentHealthPoints -= 20;
         }
     }
 }

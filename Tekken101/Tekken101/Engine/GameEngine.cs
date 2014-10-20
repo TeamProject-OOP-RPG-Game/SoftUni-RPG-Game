@@ -1,14 +1,18 @@
-﻿using System;
-using TheGame.Renderers;
-using TheGame.UI;
+﻿
 
-namespace TheGame
+using Tekken101.Renderer;
+
+namespace Tekken101
 {
+    using System;
+    using Characters;
+    using Interfaces;
+
     public class GameEngine : IGameEngine
     {
         private IPaintInterface painter;
-        private Character player;
-        private Character enemy;
+        private BaseCharacter player;
+        private BaseCharacter enemy;
         public GameEngine(IUserInputInterface controller, IPaintInterface painter)
         {
             SubscribeToUserInput(controller);
@@ -20,8 +24,8 @@ namespace TheGame
 
         private void InitializeCharacters()
         {
-            player = new Player.Player(100, 100, 200, 140);
-            enemy = new Enemy.Enemy(200, 100, 200, 100);
+            player = new Alien(SpriteType.Player, 100, "alien", "I'm The best", 100, 10, 100, 5, 5);
+            enemy = new JohnTheBaptist(SpriteType.Enemy, 500, "John", "I'm The best", 100, 10, 100, 5, 5);
         }
 
         public void StartGame()
@@ -48,13 +52,6 @@ namespace TheGame
         {
             throw new NotImplementedException();
         }
-
-        public void Draw(IRenderable item)
-        {
-             painter.AddObject(item);
-        }
-
-
         public void PlayNextTurn()
         {
             

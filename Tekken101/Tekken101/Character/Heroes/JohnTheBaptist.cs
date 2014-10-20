@@ -1,6 +1,8 @@
-﻿namespace MortalKombat.Characters
+﻿namespace Tekken101.Characters
 {
-    using MortalKombat.Interfaces;
+    using Interfaces;
+    using Tekken101.Renderer;
+
     public class JohnTheBaptist : BaseBerserk
     {
         private const string DestriptionSkillOne = "Baptises yo ass: /n80% hit chance /n20-30 damage";
@@ -8,9 +10,10 @@
         private const string DestriptionSkillThree = "Fuck you up with holy light: /n10% hit chance /n80-90 damage";
         private const string DestriptionSkillFour = "Summons angels to ambush you in the back: /n60% hit chance /n20-70 damage /n takes 100 health points from the caster";
 
-        public JohnTheBaptist(string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance) 
-            : base(initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialStunChance)
+        public JohnTheBaptist(SpriteType type, int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance) 
+            : base(X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialStunChance)
         {
+            SpriteType = type;
         }
 
         public override void CastSkillOne(ICharacter Enemy)
@@ -35,7 +38,7 @@
         {
             BaseSkill AttackFour = new BaseSkill("Divine Ambush", DestriptionSkillFour, 60, 20, 70);
             AttackFour.UseSkill(this, Enemy);
-            this.Health -= 100;
+            this.CurrentHealthPoints -= 100;
         }
     }
 }

@@ -1,14 +1,15 @@
-﻿namespace MortalKombat
+﻿namespace Tekken101.Characters
 {
     using System;
-    using MortalKombat.Interfaces;
+    using Interfaces;
+
     public abstract class BaseAssassin : BaseCharacter, IAssassin
     {
 
         private int lifeSteal;
 
-        public BaseAssassin(string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal) 
-            : base(name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
+        public BaseAssassin(int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal) 
+            : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
         {
             this.LifeSteal = initialLifeSteal;
             this.RageMode = false;

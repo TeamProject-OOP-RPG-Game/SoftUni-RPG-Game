@@ -1,4 +1,4 @@
-﻿namespace MortalKombat.Interfaces
+﻿namespace Tekken101.Interfaces
 {
     public interface IAssassin
     {

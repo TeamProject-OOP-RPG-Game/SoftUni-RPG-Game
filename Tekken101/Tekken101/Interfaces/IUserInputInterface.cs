@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿
 
-namespace TheGame
+namespace Tekken101
 {
+    using System;
     public interface IUserInputInterface
     {
         event EventHandler OnRightPressed;

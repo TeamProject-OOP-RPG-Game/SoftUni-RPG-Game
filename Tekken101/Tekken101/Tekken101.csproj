@@ -44,14 +44,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Character\BaseAssassin.cs" />
+    <Compile Include="Character\BaseBerserk.cs" />
+    <Compile Include="Character\BaseCharacter.cs" />
+    <Compile Include="Character\BaseSkill.cs" />
+    <Compile Include="Character\Heroes\Alien.cs" />
+    <Compile Include="Character\Heroes\JohnTheBaptist.cs" />
+    <Compile Include="Engine\GameEngine.cs" />
+    <Compile Include="Engine\MouseController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Interfaces\IAssassin.cs" />
+    <Compile Include="Interfaces\IBerserk.cs" />
+    <Compile Include="Interfaces\ICaster.cs" />
+    <Compile Include="Interfaces\ICharacter.cs" />
+    <Compile Include="Interfaces\IGameEngine.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IPaintInterface.cs" />
+    <Compile Include="Interfaces\IRenderable.cs" />
+    <Compile Include="Interfaces\ISkill.cs" />
+    <Compile Include="Interfaces\IUserInputInterface.cs" />
+    <Compile Include="MainClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\SpriteType.cs" />
+    <Compile Include="Renderer\PaintBrush.cs" />
+    <Compile Include="TheGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheGame.designer.cs">
+      <DependentUpon>TheGame.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +88,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TheGame.resx">
+      <DependentUpon>TheGame.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -73,6 +103,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\asukaS.png" />
+    <Content Include="Images\KidGoku.png" />
+    <Content Include="Images\SubZero.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

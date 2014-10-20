@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using TheGame.Enemy;
 
-namespace TheGame
+namespace Tekken101
 {
     static class MainClass
     {
