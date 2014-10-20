@@ -49,7 +49,15 @@
     <Compile Include="Character\BaseCharacter.cs" />
     <Compile Include="Character\BaseSkill.cs" />
     <Compile Include="Character\Heroes\Alien.cs" />
+    <Compile Include="Character\Heroes\Baek.cs" />
+    <Compile Include="Character\Heroes\Heihachi.cs" />
+    <Compile Include="Character\Heroes\Jin.cs" />
     <Compile Include="Character\Heroes\JohnTheBaptist.cs" />
+    <Compile Include="Character\Heroes\Lee.cs" />
+    <Compile Include="Character\Heroes\Leo.cs" />
+    <Compile Include="Character\Heroes\Lili.cs" />
+    <Compile Include="Character\Heroes\Nina.cs" />
+    <Compile Include="Character\Heroes\Steve.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="Engine\MouseController.cs" />
     <Compile Include="Form1.cs">

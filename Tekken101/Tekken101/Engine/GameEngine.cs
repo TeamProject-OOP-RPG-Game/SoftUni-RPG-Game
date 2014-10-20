@@ -24,8 +24,8 @@ namespace Tekken101
 
         private void InitializeCharacters()
         {
-            player = new Alien(SpriteType.Player, 100, "alien", "I'm The best", 100, 10, 100, 5, 5);
-            enemy = new JohnTheBaptist(SpriteType.Enemy, 500, "John", "I'm The best", 100, 10, 100, 5, 5);
+            player = new Nina(SpriteType.Player, 100, "alien", "I'm The best", 100, 10, 100, 5, 5);
+            enemy = new Baek(SpriteType.Enemy, 500, "John", "I'm The best", 100, 10, 100, 5, 5);
         }
 
         public void StartGame()

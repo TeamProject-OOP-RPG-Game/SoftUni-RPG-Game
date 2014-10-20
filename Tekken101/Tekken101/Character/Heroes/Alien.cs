@@ -1,6 +1,4 @@
-﻿
-
-namespace Tekken101.Characters
+﻿namespace Tekken101.Characters
 {
     using Interfaces;
     using Tekken101.Renderer;
