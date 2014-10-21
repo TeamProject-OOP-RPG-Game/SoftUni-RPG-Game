@@ -50,8 +50,10 @@ namespace Tekken101.Engine
 
         private void MovePlayerLeft()
         {
-            player.Move(-50);    
-            painter.RedrawObject(player);
+            player.Move(-50); 
+            painter.RemoveObject(player);
+            painter.AddObject(player);
+            //painter.RedrawObject(player);
         }
         public void PlayNextTurn()
         {
