@@ -35,7 +35,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tekken101.Properties.Resources.arena2;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::Tekken101.Properties.Resources.arena1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1200, 600);
             this.Name = "TheGame";

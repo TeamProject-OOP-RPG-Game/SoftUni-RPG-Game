@@ -127,7 +127,10 @@
             picBoxRight.Location = new Point(120, 500);
             picBoxRight.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
             this.gameWindow.Controls.Add(picBoxRight);
-            
+
+            this.gameWindow.BackgroundImage = Image.FromFile("../../Images/Arenas/arena1.jpg");
+            this.gameWindow.BackgroundImage = Image.FromFile("../../Images/Arenas/arena1.jpg");
+
         }
 
         private Image GetSpriteImage(IRenderable renderableObject)
