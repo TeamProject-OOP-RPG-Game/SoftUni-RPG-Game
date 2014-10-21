@@ -16,6 +16,9 @@
         private const int ProgressBarEnemyX = 690;
         private const int ProgressBarPlayerX = 10;
 
+        private const int PictureBoxSizeX = 64;
+        private const int PictureBoxSizeY = 64;
+
         private const string PlayerImagePath = "../../Images/asukaS.png";
         private const string EnemyImagePath = "../../Images/KidGoku.png";
 
@@ -28,6 +31,7 @@
         {
             this.gameWindow = form;
             this.LoadResources();
+            this.InitialiseButtons();
             this.pictureBoxes = new List<PictureBox>();
             this.progressBars = new List<ProgressBar>();
         }
@@ -98,7 +102,33 @@
             picBox.Tag = renderableObject;
             this.pictureBoxes.Add(picBox);
             this.gameWindow.Controls.Add(picBox);
-        } 
+        }
+
+        private void InitialiseButtons()
+        {
+            //image left
+            var imageleft = Image.FromFile("../../Images/left.png");
+            var picBoxLeft = new PictureBox();
+            picBoxLeft.Name = "pictureLeft";
+            picBoxLeft.BackColor = Color.Transparent;
+            picBoxLeft.Image = imageleft;
+            picBoxLeft.Parent = this.gameWindow;
+            picBoxLeft.Location = new Point(50, 500);
+            picBoxLeft.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+            this.gameWindow.Controls.Add(picBoxLeft);
+
+            // image right
+            var imageRight = Image.FromFile("../../Images/right.png");
+            var picBoxRight = new PictureBox();
+            picBoxRight.Name = "pictureRight";
+            picBoxRight.BackColor = Color.Transparent;
+            picBoxRight.Image = imageRight;
+            picBoxRight.Parent = this.gameWindow;
+            picBoxRight.Location = new Point(120, 500);
+            picBoxRight.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+            this.gameWindow.Controls.Add(picBoxRight);
+            
+        }
 
         private Image GetSpriteImage(IRenderable renderableObject)
         {

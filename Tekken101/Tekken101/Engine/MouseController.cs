@@ -17,15 +17,27 @@ namespace Tekken101.Engine
 
         public MouseController(Form form)
         {
-            var pb = new PictureBox();
-            pb.Size = new Size(400, 400);
-            pb.Location = new Point(0, 0);
-            form.Controls.Add(pb);
-            pb.MouseClick += ButtonMouseClick;
+//            var pb = new PictureBox();
+//            pb.Size = new Size(400, 400);
+//            pb.Location = new Point(0, 0);
+//            pb.Name = "buttonright";
+//            form.Controls.Add(pb);
+//            var isFound = form.Controls.Find("button1", true);
+//            isFound[0].Click += Button_Click;
+            form.Controls["pictureLeft"].MouseClick += LeftMove;
+            form.Controls["pictureRight"].MouseClick += RightMove;
             form.MouseClick += FormMouseClick;
         }
 
-        private void ButtonMouseClick(object sender, MouseEventArgs e)
+        private void RightMove(object sender, MouseEventArgs e)
+        {
+            if (this.OnRightPressed != null)
+            {
+                this.OnRightPressed(this, new EventArgs());
+            }
+        }
+
+        private void LeftMove(object sender, MouseEventArgs e)
         {
             if (this.OnLeftPressed != null)
             {

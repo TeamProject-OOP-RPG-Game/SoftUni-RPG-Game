@@ -14,8 +14,8 @@
         }
         private void TheGame_Load(object sender, EventArgs e)
         {
-            IUserInputInterface controller = new MouseController(this);
             IPaintInterface painter = new PaintBrush(this);
+            IUserInputInterface controller = new MouseController(this);
             IGameEngine engine = new GameEngine(controller, painter);
             Timer timer = new Timer();
             timer.Interval = 100;

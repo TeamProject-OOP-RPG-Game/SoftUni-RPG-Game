@@ -115,6 +115,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\left.png" />
+    <Content Include="Images\right.png" />
     <Content Include="Images\asukaS.png" />
     <Content Include="Images\KidGoku.png" />
     <Content Include="Images\SubZero.png" />
