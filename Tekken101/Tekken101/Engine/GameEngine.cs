@@ -40,6 +40,10 @@ namespace Tekken101.Engine
         {
             userInteface.OnLeftPressed += (sender, args) => this.MovePlayerLeft();
             userInteface.OnRightPressed += (sender, args) => this.MovePlayerRight();
+            userInteface.OnSpellOnePressed += (sender, args) => this.UseSpellOne();
+            userInteface.OnSpellTwoPressed += (sender, args) => this.UseSpellTwo();
+            userInteface.OnSpellThreePressed += (sender, args) => this.UseSpellThree();
+            userInteface.OnSpellFourPressed += (sender, args) => this.UseSpellFour();
         }
 
         private void MovePlayerRight()

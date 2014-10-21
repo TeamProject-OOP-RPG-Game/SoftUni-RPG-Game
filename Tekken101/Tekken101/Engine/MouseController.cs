@@ -21,8 +21,6 @@ namespace Tekken101.Engine
 
         public event EventHandler OnSpellFourPressed;
 
-        public event EventHandler OnSpellFourHovered;
-
         public MouseController(Form form)
         {
             form.Controls["pictureLeft"].MouseClick += LeftMove;
@@ -81,16 +79,6 @@ namespace Tekken101.Engine
                 this.OnSpellFourPressed(this, new EventArgs());
             }
         }
-
-        private void ShowSpellFourDescription(object sender, MouseEventArgs e)
-        {
-            if (this.OnSpellFourHovered != null)
-            {
-                this.OnSpellFourHovered(this, new EventArgs());
-            }
-        }
-
-
         private void FormMouseClick(object sender, MouseEventArgs e)
         {
  
