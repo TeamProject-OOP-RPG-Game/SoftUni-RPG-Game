@@ -68,7 +68,7 @@ namespace Tekken101.Characters
             }
         }
 
-        public int CurrentHealth
+        public int CurrentHealth 
         {
             get
             {

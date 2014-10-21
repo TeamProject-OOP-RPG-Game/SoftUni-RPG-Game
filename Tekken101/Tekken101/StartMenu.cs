@@ -19,9 +19,10 @@ namespace Tekken101
 
         private void StartGame(object sender, System.Windows.Forms.MouseEventArgs e)
         {
-            
-            Form theGame = new TheGame();
-            theGame.Controls.Add((PictureBox)sender);
+
+            Form theGame = new TheGame((PictureBox)sender);
+
+
             theGame.Show();
             this.Hide();
         }
