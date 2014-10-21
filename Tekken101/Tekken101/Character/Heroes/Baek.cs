@@ -5,10 +5,10 @@
   
     public class Baek : BaseAssassin
     {
-        private const string DestriptionSkillOne = ": /n55% hit chance /n50-70 damage";
-        private const string DestriptionSkillTwo = ": /n70% hit chance /n20-30 damage";
-        private const string DestriptionSkillThree = ": /n10% hit chance /n80-90 damage";
-        private const string DestriptionSkillFour = ": /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
+        public const string DestriptionSkillOne = ": /n55% hit chance /n50-70 damage";
+        public const string DestriptionSkillTwo = ": /n70% hit chance /n20-30 damage";
+        public const string DestriptionSkillThree = ": /n10% hit chance /n80-90 damage";
+        public const string DestriptionSkillFour = ": /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
 
         public Baek(SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
             : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)

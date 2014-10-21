@@ -21,14 +21,17 @@ namespace Tekken101.Engine
 
         public event EventHandler OnSpellFourPressed;
 
+        public event EventHandler OnSpellFourHovered;
+
         public MouseController(Form form)
         {
             form.Controls["pictureLeft"].MouseClick += LeftMove;
             form.Controls["pictureRight"].MouseClick += RightMove;
-            form.Controls["pictureSpellOne"].MouseClick += UseSpellTwo;
+            form.Controls["pictureSpellOne"].MouseClick += UseSpellOne;
             form.Controls["pictureSpellTwo"].MouseClick += UseSpellTwo;
-            form.Controls["pictureSpellThree"].MouseClick += UseSpellTwo;
-            form.Controls["pictureSpellFour"].MouseClick += UseSpellTwo;
+            form.Controls["pictureSpellThree"].MouseClick += UseSpellThree;
+            form.Controls["pictureSpellFour"].MouseClick += UseSpellFour;
+           // form.Controls["pictureSpellFour"].MouseHover += ShowSpellFourDescription;
             //form.MouseClick += FormMouseClick;
         }
 
@@ -76,6 +79,14 @@ namespace Tekken101.Engine
             if (this.OnSpellFourPressed != null)
             {
                 this.OnSpellFourPressed(this, new EventArgs());
+            }
+        }
+
+        private void ShowSpellFourDescription(object sender, MouseEventArgs e)
+        {
+            if (this.OnSpellFourHovered != null)
+            {
+                this.OnSpellFourHovered(this, new EventArgs());
             }
         }
 

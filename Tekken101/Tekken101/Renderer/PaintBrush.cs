@@ -137,6 +137,7 @@
             picBoxSpellOne.Parent = this.gameWindow;
             picBoxSpellOne.Location = new Point(190, 530);
             picBoxSpellOne.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+            picBoxSpellOne.T
             this.gameWindow.Controls.Add(picBoxSpellOne);
 
             // image spellTwo

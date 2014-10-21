@@ -63,7 +63,6 @@ namespace Tekken101.Engine
         {
             player.CastSkillTwo(enemy);
             painter.RedrawObject(enemy);
-
         }
         private void UseSpellThree()
         {
@@ -79,6 +78,11 @@ namespace Tekken101.Engine
         public void PlayNextTurn()
         {
             painter.RedrawObject(player);
+        }
+
+        public void ShowSpellFourDescription()
+        {
+            
         }
     }
 }
