@@ -97,6 +97,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TheGame.resx">
       <DependentUpon>TheGame.cs</DependentUpon>
@@ -115,6 +116,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Images\Arenas\arena1.jpg" />
+    <None Include="Images\Arenas\arena2.jpg" />
     <Content Include="Images\left.png" />
     <Content Include="Images\right.png" />
     <Content Include="Images\asukaS.png" />

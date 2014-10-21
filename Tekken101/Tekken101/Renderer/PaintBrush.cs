@@ -19,8 +19,8 @@
         private const int PictureBoxSizeX = 64;
         private const int PictureBoxSizeY = 64;
 
-        private const string PlayerImagePath = "../../Images/asukaS.png";
-        private const string EnemyImagePath = "../../Images/KidGoku.png";
+        private const string PlayerImagePath = "../../Images/Characters/BaekS.png";
+        private const string EnemyImagePath = "../../Images/Characters/LeeRS.png";
 
         private Image playerImage, enemyImage;
         private Form gameWindow;
