@@ -46,15 +46,31 @@ namespace Tekken101.Engine
             userInteface.OnSpellFourPressed += (sender, args) => this.UseSpellFour();
         }
 
+        private void MoveObjectIfPossible(ICharacter player, ICharacter enemy, int distance)
+        {
+            if ((player.X + distance) >= (enemy.X - 160))
+            {
+                player.Move(0);
+            }
+            else if(player.X + distance <= 0) 
+            {
+                player.X = 0;
+            }
+            else
+            {
+                player.Move(distance);
+            }
+        }
+
         private void MovePlayerRight()
         {
-            player.Move(50);
+            MoveObjectIfPossible(player, enemy, 50);
             painter.RedrawObject(player);
         }
 
         private void MovePlayerLeft()
         {
-            player.Move(-50);
+            MoveObjectIfPossible(player, enemy, -50);
             painter.RedrawObject(player);
         }
 

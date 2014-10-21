@@ -6,6 +6,7 @@
 
     public abstract class GameObject : IGameObject, IRenderable
     {
+        private int x;
         public GameObject(int X, int Y, int SizeX, int SizeY)
         {
             this.X = X;
@@ -14,7 +15,18 @@
             this.SizeY = SizeY;
         }
 
-        public int X { get; set; }
+        public int X
+        {
+            get
+            {
+                return this.x;
+            }
+
+            set
+            {
+                this.x = value;
+            }
+        }
 
         public int Y { get; set; }
 

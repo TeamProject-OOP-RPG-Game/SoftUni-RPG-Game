@@ -18,10 +18,9 @@ namespace Tekken101.Characters
         private int speed;
         private int defense;
         private int criticalChance;
-        private int maxHealthPoints;
         
-        public BaseCharacter(int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
-            :base (X, InitialY, InitialSizeX, InitialSizeY)
+        public BaseCharacter(int initialX, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
+            :base (initialX, InitialY, InitialSizeX, InitialSizeY)
         {
             this.Name = initialName;
             this.Description = description;
@@ -30,7 +29,7 @@ namespace Tekken101.Characters
             this.Speed = initialSpeed;
             this.Defense = initialDefense;
             this.CriticalChance = initialCriticalChance;
-            this.X = X;
+            this.X = initialX;
             this.Y = 210;
         }
 
@@ -80,10 +79,12 @@ namespace Tekken101.Characters
             {
                 if (value < 0)
                 {
-                    throw new ArgumentNullException("BaseCharacter health cannot be negative!");
+                    this.currentHealth = 0;
                 }
-
-                this.currentHealth = value;
+                else
+                {
+                    this.currentHealth = value;
+                }
             }
         }
 
@@ -155,6 +156,9 @@ namespace Tekken101.Characters
                 this.criticalChance = value;
             }
         }
+
+
+
 
         public abstract void CastSkillOne(ICharacter Enemy);
 
