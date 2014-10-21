@@ -29,6 +29,10 @@ namespace Tekken101.Engine
             form.Controls["pictureSpellTwo"].MouseClick += UseSpellTwo;
             form.Controls["pictureSpellThree"].MouseClick += UseSpellThree;
             form.Controls["pictureSpellFour"].MouseClick += UseSpellFour;
+            //if (form.Controls["lee"] != null) {
+              //  form.
+            //}
+            
            // form.Controls["pictureSpellFour"].MouseHover += ShowSpellFourDescription;
             //form.MouseClick += FormMouseClick;
         }

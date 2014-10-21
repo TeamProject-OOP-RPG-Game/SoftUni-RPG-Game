@@ -61,12 +61,6 @@
     <Compile Include="Character\Heroes\Steve.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="Engine\MouseController.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Character\GameObject.cs" />
     <Compile Include="Interfaces\IAssassin.cs" />
     <Compile Include="Interfaces\IBerserk.cs" />
@@ -83,6 +77,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer\SpriteType.cs" />
     <Compile Include="Renderer\PaintBrush.cs" />
+    <Compile Include="StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="TheGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +99,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TheGame.resx">
       <DependentUpon>TheGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +123,16 @@
     <None Include="Images\Arenas\arena1.jpg" />
     <None Include="Images\Arenas\arena2.jpg" />
     <None Include="Images\Arenas\arena3.jpg" />
+    <None Include="Images\Characters\baekS.png" />
+    <None Include="Images\Characters\christieS.png" />
+    <None Include="Images\Characters\heihachiS.png" />
+    <None Include="Images\Characters\jinRS.png" />
+    <None Include="Images\Characters\leeS.png" />
+    <None Include="Images\Characters\leoRS.png" />
+    <None Include="Images\Characters\liliS.png" />
+    <None Include="Images\Characters\miguelS.png" />
+    <None Include="Images\Characters\ninaRS.png" />
+    <None Include="Images\Characters\steveS.png" />
     <Content Include="Images\left.png" />
     <Content Include="Images\right.png" />
     <Content Include="Images\asukaS.png" />
