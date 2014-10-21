@@ -118,6 +118,7 @@
   <ItemGroup>
     <None Include="Images\Arenas\arena1.jpg" />
     <None Include="Images\Arenas\arena2.jpg" />
+    <None Include="Images\Arenas\arena3.jpg" />
     <Content Include="Images\left.png" />
     <Content Include="Images\right.png" />
     <Content Include="Images\asukaS.png" />

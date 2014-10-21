@@ -30,6 +30,8 @@ namespace Tekken101.Characters
             this.Speed = initialSpeed;
             this.Defense = initialDefense;
             this.CriticalChance = initialCriticalChance;
+            this.X = X;
+            this.Y = 210;
         }
 
         public string Name

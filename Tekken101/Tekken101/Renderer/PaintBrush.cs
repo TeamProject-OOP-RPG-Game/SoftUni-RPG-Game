@@ -113,7 +113,7 @@
             picBoxLeft.BackColor = Color.Transparent;
             picBoxLeft.Image = imageleft;
             picBoxLeft.Parent = this.gameWindow;
-            picBoxLeft.Location = new Point(50, 500);
+            picBoxLeft.Location = new Point(50, 530);
             picBoxLeft.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
             this.gameWindow.Controls.Add(picBoxLeft);
 
@@ -124,13 +124,55 @@
             picBoxRight.BackColor = Color.Transparent;
             picBoxRight.Image = imageRight;
             picBoxRight.Parent = this.gameWindow;
-            picBoxRight.Location = new Point(120, 500);
+            picBoxRight.Location = new Point(120, 530);
             picBoxRight.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
             this.gameWindow.Controls.Add(picBoxRight);
 
-            this.gameWindow.BackgroundImage = Image.FromFile("../../Images/Arenas/arena1.jpg");
-            this.gameWindow.BackgroundImage = Image.FromFile("../../Images/Arenas/arena1.jpg");
+            // image spellOne
+            var imageSpellOne = Image.FromFile("../../Images/Spells/01-01.png");
+            var picBoxSpellOne = new PictureBox();
+            picBoxSpellOne.Name = "pictureSpellOne";
+            picBoxSpellOne.BackColor = Color.Transparent;
+            picBoxSpellOne.Image = imageSpellOne;
+            picBoxSpellOne.Parent = this.gameWindow;
+            picBoxSpellOne.Location = new Point(190, 530);
+            picBoxSpellOne.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+            this.gameWindow.Controls.Add(picBoxSpellOne);
 
+            // image spellTwo
+            var imageSpellTwo = Image.FromFile("../../Images/Spells/01-02.png");
+            var picBoxSpellTwo = new PictureBox();
+            picBoxSpellTwo.Name = "pictureSpellTwo";
+            picBoxSpellTwo.BackColor = Color.Transparent;
+            picBoxSpellTwo.Image = imageSpellTwo;
+            picBoxSpellTwo.Parent = this.gameWindow;
+            picBoxSpellTwo.Location = new Point(260, 530);
+            picBoxSpellTwo.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+            this.gameWindow.Controls.Add(picBoxSpellTwo);
+
+            // image spellThree
+            var imageSpellThree = Image.FromFile("../../Images/Spells/01-03.png");
+            var picBoxSpellThree = new PictureBox();
+            picBoxSpellThree.Name = "pictureSpellThree";
+            picBoxSpellThree.BackColor = Color.Transparent;
+            picBoxSpellThree.Image = imageSpellThree;
+            picBoxSpellThree.Parent = this.gameWindow;
+            picBoxSpellThree.Location = new Point(330, 530);
+            picBoxSpellThree.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+            this.gameWindow.Controls.Add(picBoxSpellThree);
+
+            // image spellFour
+            var imageSpellFour = Image.FromFile("../../Images/Spells/01-04.png");
+            var picBoxSpellFour = new PictureBox();
+            picBoxSpellFour.Name = "pictureSpellFour";
+            picBoxSpellFour.BackColor = Color.Transparent;
+            picBoxSpellFour.Image = imageSpellFour;
+            picBoxSpellFour.Parent = this.gameWindow;
+            picBoxSpellFour.Location = new Point(400, 530);
+            picBoxSpellFour.Size = new Size(PictureBoxSizeX, PictureBoxSizeY);
+           // picBoxSpellFour.MouseHover();
+            this.gameWindow.Controls.Add(picBoxSpellFour);
+            
         }
 
         private Image GetSpriteImage(IRenderable renderableObject)
