@@ -4,6 +4,7 @@ namespace Tekken101.Characters
 {
     using System;
     using Interfaces;
+    using Renderer;
     public class BaseSkill : ISkill
     {
         private string skillName;
@@ -11,10 +12,18 @@ namespace Tekken101.Characters
         private int hitChance;
         private int damageMin;
         private int damageMax;
+        private int range;
 
-        public BaseSkill(string skillName, string skillDescription, int hitChance, int damageMin, int damageMax)
+        public BaseSkill(SpriteType spriteType, string skillName, string skillDescription, int hitChance, int damageMin, int damageMax, int range)
         {
-            
+            this.SpriteType = spriteType;
+            this.SkillName = skillName;
+            this.SkillDescription = skillDescription;
+            this.HitChance = hitChance;
+            this.DamageMin = damageMin;
+            this.DamageMax = damageMax;
+            this.Range = range;
+
         }
 
         public string SkillName
@@ -106,6 +115,22 @@ namespace Tekken101.Characters
                 this.damageMax = value;
             }
         }
+
+        public int Range
+        {
+            get
+            {
+                return this.range;
+            }
+
+            set
+            {
+                this.range = value;
+            }
+        }
+
+        public SpriteType SpriteType { get; set; }
+
         public void UseSkill(ICharacter Caster, ICharacter Enemy)
         {
             Enemy.CurrentHealth -= 60;

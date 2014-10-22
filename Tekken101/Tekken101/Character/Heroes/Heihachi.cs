@@ -10,36 +10,87 @@
         private const string DestriptionSkillThree = "Fuck you up with holy light: /n10% hit chance /n80-90 damage";
         private const string DestriptionSkillFour = "Summons angels to ambush you in the back: /n60% hit chance /n20-70 damage /n takes 100 health points from the caster";
 
+        private BaseSkill attackOne;
+        private BaseSkill attackTwo;
+        private BaseSkill attackThree;
+        private BaseSkill attackFour;
+
         public Heihachi(SpriteType type, int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance)
             : base(X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialStunChance)
         {
             SpriteType = type;
             this.PlayerType = PlayerType.Heihachi;
         }
+        public BaseSkill AttackOne
+        {
+            get
+            {
+                return this.attackOne;
+            }
 
+            set
+            {
+                this.attackOne = new BaseSkill(SpriteType.HammerHead, "Hammer Head", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
+        public BaseSkill AttackTwo
+        {
+            get
+            {
+                return this.attackTwo;
+            }
+
+            set
+            {
+                this.attackTwo = new BaseSkill(SpriteType.CobraBite, "Cobra Bite", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
+        public BaseSkill AttackThree
+        {
+            get
+            {
+                return this.attackThree;
+            }
+
+            set
+            {
+                this.attackThree = new BaseSkill(SpriteType.HuntingSerpent, "Hunting Serpent", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
+        public BaseSkill AttackFour
+        {
+            get
+            {
+                return this.attackFour;
+            }
+
+            set
+            {
+                this.attackFour = new BaseSkill(SpriteType.SnakeRevenge, "Snake Revenge", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
         public override void CastSkillOne(ICharacter Enemy)
         {
-            BaseSkill AttackOne = new BaseSkill("Baptism", DestriptionSkillOne, 80, 20, 30);
-            AttackOne.UseSkill(this, Enemy);
+            this.AttackOne.UseSkill(this, Enemy);
         }
 
         public override void CastSkillTwo(ICharacter Enemy)
         {
-            BaseSkill AttackTwo = new BaseSkill("Repentance", DestriptionSkillTwo, 50, 5, 55);
-            AttackTwo.UseSkill(this, Enemy);
+            this.AttackTwo.UseSkill(this, Enemy);
         }
 
         public override void CastSkillThree(ICharacter Enemy)
         {
-            BaseSkill AttackThree = new BaseSkill("Holy Light", DestriptionSkillThree, 10, 80, 90);
-            AttackThree.UseSkill(this, Enemy);
+            this.AttackThree.UseSkill(this, Enemy);
         }
 
         public override void CastSkillFour(ICharacter Enemy)
         {
-            BaseSkill AttackFour = new BaseSkill("Divine Ambush", DestriptionSkillFour, 60, 20, 70);
-            AttackFour.UseSkill(this, Enemy);
-            this.CurrentHealth -= 100;
+            this.AttackFour.UseSkill(this, Enemy);
+            this.CurrentHealth -= 20;
         }
     }
 }

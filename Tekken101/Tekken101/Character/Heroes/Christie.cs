@@ -5,10 +5,15 @@
 
     public class Christie : BaseAssassin
     {
-        private const string DestriptionSkillOne = "Bites the enemy and infects him with a deadly poison: /n55% hit chance /n50-70 damage";
-        private const string DestriptionSkillTwo = "Furga ti mishki fostataa: /n70% hit chance /n20-30 damage";
-        private const string DestriptionSkillThree = "Devours the target causing enormous amount of damage: /n10% hit chance /n80-90 damage";
-        private const string DestriptionSkillFour = "Virus Injection: /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
+        public const string DestriptionSkillOne = ": /n55% hit chance /n50-70 damage";
+        public const string DestriptionSkillTwo = ": /n70% hit chance /n20-30 damage";
+        public const string DestriptionSkillThree = ": /n10% hit chance /n80-90 damage";
+        public const string DestriptionSkillFour = ": /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
+
+        private BaseSkill attackOne;
+        private BaseSkill attackTwo;
+        private BaseSkill attackThree;
+        private BaseSkill attackFour;
 
         public Christie(SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
             : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
@@ -16,29 +21,77 @@
             this.SpriteType = type;
             this.PlayerType = PlayerType.Christie;
         }
+        public BaseSkill AttackOne
+        {
+            get
+            {
+                return this.attackOne;
+            }
+
+            set
+            {
+                this.attackOne = new BaseSkill(SpriteType.HammerHead, "Hammer Head", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
+        public BaseSkill AttackTwo
+        {
+            get
+            {
+                return this.attackTwo;
+            }
+
+            set
+            {
+                this.attackTwo = new BaseSkill(SpriteType.CobraBite, "Cobra Bite", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
+        public BaseSkill AttackThree
+        {
+            get
+            {
+                return this.attackThree;
+            }
+
+            set
+            {
+                this.attackThree = new BaseSkill(SpriteType.HuntingSerpent, "Hunting Serpent", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
+        public BaseSkill AttackFour
+        {
+            get
+            {
+                return this.attackFour;
+            }
+
+            set
+            {
+                this.attackFour = new BaseSkill(SpriteType.SnakeRevenge, "Snake Revenge", DestriptionSkillOne, 55, 50, 70, 200);
+            }
+        }
+
 
         public override void CastSkillOne(ICharacter Enemy)
         {
-            BaseSkill AttackOne = new BaseSkill("Dead Bite", DestriptionSkillOne, 55, 50, 70);
-            AttackOne.UseSkill(this, Enemy);
+            this.AttackOne.UseSkill(this, Enemy);
         }
 
         public override void CastSkillTwo(ICharacter Enemy)
         {
-            BaseSkill AttackTwo = new BaseSkill("Rat Attack", DestriptionSkillTwo, 55, 50, 70);
-            AttackTwo.UseSkill(this, Enemy);
+            this.AttackTwo.UseSkill(this, Enemy);
         }
 
         public override void CastSkillThree(ICharacter Enemy)
         {
-            BaseSkill AttackThree = new BaseSkill("Rat Attack", DestriptionSkillThree, 55, 50, 70);
-            AttackThree.UseSkill(this, Enemy);
+            this.AttackThree.UseSkill(this, Enemy);
         }
 
         public override void CastSkillFour(ICharacter Enemy)
         {
-            BaseSkill AttackFour = new BaseSkill("Virus Injection", DestriptionSkillFour, 20, 70, 100);
-            AttackFour.UseSkill(this, Enemy);
+            this.AttackFour.UseSkill(this, Enemy);
             this.CurrentHealth -= 20;
         }
     }
