@@ -68,7 +68,7 @@ namespace Tekken101.Engine
         private void InitializeEnemy()
         {
             Random random = new Random();
-            int randomNumber = random.Next(0, 9);
+            int randomNumber = random.Next(0, 10);
             switch (randomNumber)
             {
                     
@@ -97,10 +97,10 @@ namespace Tekken101.Engine
                     this.enemy = new Miguel(SpriteType.Enemy, 900, "Miguel", "Berserk", 100, 30, 20, 10, 10);
                     break;
                 case 8:
-                    this.player = new Nina(SpriteType.Enemy, 900, "Nina", "Assassin", 100, 30, 20, 10, 10);
+                    this.enemy = new Nina(SpriteType.Enemy, 900, "Nina", "Assassin", 100, 30, 20, 10, 10);
                     break;
                 case 9:
-                    this.player = new Steve(SpriteType.Enemy, 900, "Steve", "Berserk", 100, 30, 20, 10, 10);
+                    this.enemy = new Steve(SpriteType.Enemy, 900, "Steve", "Berserk", 100, 30, 20, 10, 10);
                     break;
             }
         }
@@ -146,34 +146,46 @@ namespace Tekken101.Engine
         {
             MoveObjectIfPossible(player, enemy, 50);
             painter.RedrawObject(player);
+            PlayEnemyTurn();
         }
 
         private void MovePlayerLeft()
         {
             MoveObjectIfPossible(player, enemy, -50);
             painter.RedrawObject(player);
+            PlayEnemyTurn();
         }
 
         private void UseSpellOne()
         {
             player.CastSkillOne(enemy);
             painter.RedrawObject(enemy);
+            PlayEnemyTurn();
+        }
+
+        private void PlayEnemyTurn()
+        {
+            enemy.CastSkillOne(player);
+            PlayNextTurn();
         }
         private void UseSpellTwo()
         {
             player.CastSkillTwo(enemy);
             painter.RedrawObject(enemy);
+            PlayEnemyTurn();
         }
         private void UseSpellThree()
         {
             player.CastSkillThree(enemy);
             painter.RedrawObject(enemy);
+            PlayEnemyTurn();
 
         }
         private void UseSpellFour()
         {
             player.CastSkillFour(enemy);
             painter.RedrawObject(enemy);
+            PlayEnemyTurn();
         }
         public void PlayNextTurn()
         {

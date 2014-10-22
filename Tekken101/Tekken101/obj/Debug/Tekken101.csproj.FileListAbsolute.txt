@@ -18,3 +18,13 @@ C:\Users\mitko\Desktop\SoftUni-RPG-Game\Tekken101\Tekken101\obj\Debug\Tekken101.
 C:\Users\mitko\Desktop\SoftUni-RPG-Game\Tekken101\Tekken101\obj\Debug\Tekken101.csproj.GenerateResource.Cache
 C:\Users\mitko\Desktop\SoftUni-RPG-Game\Tekken101\Tekken101\bin\Debug\Tekken101.exe
 C:\Users\mitko\Desktop\SoftUni-RPG-Game\Tekken101\Tekken101\bin\Debug\Tekken101.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\bin\Debug\Tekken101.exe.config
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.exe
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\bin\Debug\Tekken101.exe
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\bin\Debug\Tekken101.pdb
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.csprojResolveAssemblyReference.cache
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.Properties.Resources.resources
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.StartMenu.resources
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.TheGame.resources
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.csproj.GenerateResource.Cache
