@@ -1,12 +1,14 @@
 ﻿namespace Tekken101.Renderer
 {
 
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Drawing;
     using System.Windows.Forms;
     using Interfaces;
     using Characters;
+    using Engine;
 
     public class PaintBrush : IPaintInterface
     {
@@ -19,25 +21,131 @@
         private const int PictureBoxSizeX = 64;
         private const int PictureBoxSizeY = 64;
 
-        private const string PlayerImagePath = "../../Images/Characters/BaekS.png";
-        private const string EnemyImagePath = "../../Images/Characters/LeeRS.png";
+        private const string BaekImagePathP = "../../Images/Characters/baekS.png";
+        private const string ChristieImagePathP = "../../Images/Characters/christieS.png";
+        private const string HeihachiImagePathP = "../../Images/Characters/heihachiS.png";
+        private const string JinImagePathP = "../../Images/Characters/jinRS.png";
+        private const string LeeImagePathP = "../../Images/Characters/leeS.png";
+        private const string LeoImagePathP = "../../Images/Characters/leoS.png";
+        private const string LiliImagePathP = "../../Images/Characters/liliRS.png";
+        private const string MiguelImagePathP = "../../Images/Characters/miguelS.png";
+        private const string NinaImagePathP = "../../Images/Characters/ninaS.png";
+        private const string SteveImagePathP = "../../Images/Characters/steveRS.png";
+
+        private const string BaekImagePathE = "../../Images/Characters/baekRS.png";
+        private const string ChristieImagePathE = "../../Images/Characters/christieRS.png";
+        private const string HeihachiImagePathE = "../../Images/Characters/heihachiRS.png";
+        private const string JinImagePathE = "../../Images/Characters/jinS.png";
+        private const string LeeImagePathE = "../../Images/Characters/leeRS.png";
+        private const string LeoImagePathE = "../../Images/Characters/leoRS.png";
+        private const string LiliImagePathE = "../../Images/Characters/liliS.png";
+        private const string MiguelImagePathE = "../../Images/Characters/miguelRS.png";
+        private const string NinaImagePathE = "../../Images/Characters/ninaRS.png";
+        private const string SteveImagePathE = "../../Images/Characters/steveS.png";
 
         private Image playerImage, enemyImage;
         private Form gameWindow;
         private List<PictureBox> pictureBoxes;
         private List<ProgressBar> progressBars;
 
+        public string PlayerImagePath { get; private set; }
+        public string EnemyImagePath { get; private set; }
         public PaintBrush(Form form)
         {
             this.gameWindow = form;
-            this.LoadResources();
             this.InitialiseButtons();
             this.pictureBoxes = new List<PictureBox>();
             this.progressBars = new List<ProgressBar>();
         }
 
+        private Image GetPlayerImage(PlayerType playerType) 
+        {
+            switch (playerType)
+            {
+                case PlayerType.Baek:
+                    PlayerImagePath = BaekImagePathP;
+                    break;
+                case PlayerType.Christie:
+                    PlayerImagePath = ChristieImagePathP;
+                    break;
+                case PlayerType.Heihachi:
+                    PlayerImagePath = HeihachiImagePathP;
+                    break;
+                case PlayerType.Jin:
+                    PlayerImagePath = JinImagePathP;
+                    break;
+                case PlayerType.Lee:
+                    PlayerImagePath = LeeImagePathP;
+                    break;
+                case PlayerType.Leo:
+                    PlayerImagePath = LeoImagePathP;
+                    break;
+                case PlayerType.Lili:
+                    PlayerImagePath = LiliImagePathP;
+                    break;
+                case PlayerType.Miguel:
+                    PlayerImagePath = MiguelImagePathP;
+                    break;
+                case PlayerType.Nina:
+                    PlayerImagePath = NinaImagePathP;
+                    break;
+                case PlayerType.Steve:
+                    PlayerImagePath = SteveImagePathP;
+                    break;
+            }
+            this.playerImage = Image.FromFile(PlayerImagePath);
+            return playerImage;
+        }
+
+        private Image GetEnemyImage(PlayerType playerType)
+        {
+            switch (playerType)
+            {
+                case PlayerType.Baek:
+                    EnemyImagePath = BaekImagePathE;
+                    break;
+                case PlayerType.Christie:
+                    EnemyImagePath = ChristieImagePathE;
+                    break;
+                case PlayerType.Heihachi:
+                    EnemyImagePath = HeihachiImagePathE;
+                    break;
+                case PlayerType.Jin:
+                    EnemyImagePath = JinImagePathE;
+                    break;
+                case PlayerType.Lee:
+                    EnemyImagePath = LeeImagePathE;
+                    break;
+                case PlayerType.Leo:
+                    EnemyImagePath = LeoImagePathE;
+                    break;
+                case PlayerType.Lili:
+                    EnemyImagePath = LiliImagePathE;
+                    break;
+                case PlayerType.Miguel:
+                    EnemyImagePath = MiguelImagePathE;
+                    break;
+                case PlayerType.Nina:
+                    EnemyImagePath = NinaImagePathE;
+                    break;
+                case PlayerType.Steve:
+                    EnemyImagePath = SteveImagePathE;
+                    break;
+            }
+            this.enemyImage = Image.FromFile(EnemyImagePath);
+            return enemyImage;
+        }
+
         public void AddObject(IRenderable renderableObject)
         {
+            if ((renderableObject as BaseCharacter).SpriteType == SpriteType.Player)
+            {
+                GetPlayerImage((renderableObject as BaseCharacter).PlayerType);
+            }
+            else 
+            {
+                GetEnemyImage((renderableObject as BaseCharacter).PlayerType);
+            }
             this.CreatePictureBox(renderableObject);
             if (renderableObject is BaseCharacter)
             {
@@ -201,12 +309,6 @@
         private ProgressBar GetProgressBarByObject(BaseCharacter character)
         {
             return this.progressBars.First(p => p.Tag == character);
-        }
-
-        public void LoadResources()
-        {
-            this.playerImage = Image.FromFile(PlayerImagePath);
-            this.enemyImage = Image.FromFile(EnemyImagePath);            
         }
     }
 }
