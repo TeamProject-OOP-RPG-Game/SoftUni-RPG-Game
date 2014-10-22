@@ -8,8 +8,8 @@
 
         private int lifeSteal;
 
-        public BaseAssassin(PlayerType playerType, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal) 
-            : base(playerType, X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
+        public BaseAssassin(int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal) 
+            : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
         {
             this.LifeSteal = initialLifeSteal;
             this.RageMode = false;

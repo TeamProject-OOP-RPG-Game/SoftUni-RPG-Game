@@ -10,11 +10,11 @@
         private const string DestriptionSkillThree = "Devours the target causing enormous amount of damage: /n10% hit chance /n80-90 damage";
         private const string DestriptionSkillFour = "Virus Injection: /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
 
-        public Christie(PlayerType playerType, SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
-            : base(playerType, X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
+        public Christie(SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
+            : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
         {
             this.SpriteType = type;
-            this.PlayerType = playerType;
+            this.PlayerType = PlayerType.Christie;
         }
 
         public override void CastSkillOne(ICharacter Enemy)

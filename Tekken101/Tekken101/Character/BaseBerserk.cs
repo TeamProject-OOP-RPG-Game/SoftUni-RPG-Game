@@ -6,8 +6,8 @@
     public abstract class BaseBerserk : BaseCharacter, IBerserk
     {
         private int stunChance;
-        public BaseBerserk(PlayerType playerType, int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance)
-            : base(playerType, X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
+        public BaseBerserk(int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance)
+            : base(X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance)
         {
             this.DefenseMode = false;
         }

@@ -20,7 +20,7 @@ namespace Tekken101.Characters
         private int defense;
         private int criticalChance;
         
-        public BaseCharacter(PlayerType playerType, int initialX, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
+        public BaseCharacter(int initialX, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
             :base (initialX, InitialY, InitialSizeX, InitialSizeY)
         {
             this.PlayerType = playerType;
@@ -160,9 +160,6 @@ namespace Tekken101.Characters
         }
 
         public PlayerType PlayerType { get; set; }
-
-
-
 
         public abstract void CastSkillOne(ICharacter Enemy);
 

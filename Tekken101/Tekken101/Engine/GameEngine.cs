@@ -32,34 +32,34 @@ namespace Tekken101.Engine
             switch (playerType)
             {
                 case PlayerType.Baek:
-                    this.player = new Baek();
+                    this.player = new Baek(SpriteType.Player, 100, "Baek", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Christie:
-                    this.player = new Christie();
+                    this.player = new Christie(SpriteType.Player, 100, "Christie", "2", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Heihachi:
-                    this.player = new Heihachi();
+                    this.player = new Heihachi(SpriteType.Player, 100, "Heihachi", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Jin:
-                    this.player = new Jin();
+                    this.player = new Jin(SpriteType.Player, 100, "Jin", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Lee:
-                    this.player = new Lee();
+                    this.player = new Lee(SpriteType.Player, 100, "Lee", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Leo:
-                    this.player = new Leo();
+                    this.player = new Leo(SpriteType.Player, 100, "Leo", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Lili:
-                    this.player = new Lili();
+                    this.player = new Lili(SpriteType.Player, 100, "Lili", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Miguel:
-                    this.player = new Miguel();
+                    this.player = new Miguel(SpriteType.Player, 100, "Miguel", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Nina:
-                    this.player = new Nina();
+                    this.player = new Nina(SpriteType.Player, 100, "Nina", "1", 100, 30, 20, 10, 10);
                     break;
                 case PlayerType.Steve:
-                    this.player = new Steve();
+                    this.player = new Steve(SpriteType.Player, 100, "Steve", "1", 100, 30, 20, 10, 10);
                     break;
             }
         }
