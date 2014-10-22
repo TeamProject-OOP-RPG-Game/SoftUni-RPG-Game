@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tekken101.Characters.BaseAssassin" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Character\BaseAssassin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tekken101.Characters.BaseBerserk" Collapsed="true">
+    <Position X="25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAQAgAAEAAAgAAAAAgAgAAAEAAAAAAAA=</HashCode>
+      <FileName>Character\BaseBerserk.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tekken101.Characters.BaseCharacter" Collapsed="true">
+    <Position X="18.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCAIIIQgCAAgIAAAAEQBAAAEAQgAAAEAAkAABAI=</HashCode>
+      <FileName>Character\BaseCharacter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tekken101.Characters.BaseSkill" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAIAAAACAAACBAAEEIAAABAAhAAAAAAAEIAAAA=</HashCode>
+      <FileName>Character\BaseSkill.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tekken101.Characters.Baek" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Baek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Christie" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Christie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Heihachi" Collapsed="true">
+    <Position X="21.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Heihachi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Jin" Collapsed="true">
+    <Position X="24" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Jin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Lee" Collapsed="true">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Lee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Leo" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Leo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Lili" Collapsed="true">
+    <Position X="17.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Lili.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Miguel" Collapsed="true">
+    <Position X="28.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Miguel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Nina" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Nina.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Characters.Steve" Collapsed="true">
+    <Position X="26.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIkAABEAgAEACgAAAAAAAAAgAAAEiQAAEQAA=</HashCode>
+      <FileName>Character\Heroes\Steve.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.GameObject" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAFAAYAA=</HashCode>
+      <FileName>Character\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tekken101.MainClass" Collapsed="true">
+    <Position X="34.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MainClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.StartMenu" Collapsed="true">
+    <Position X="32.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAACAACAAAACCAAAAiAAAAAAAQQAAAAAAIABA=</HashCode>
+      <FileName>StartMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.TheGame" Collapsed="true">
+    <Position X="34.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAAGACABAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>TheGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Engine.GameEngine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABBBABAgAAAAAABAAAAAgAAAAAAAFAgQAIACQAAI=</HashCode>
+      <FileName>Engine\GameEngine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tekken101.Engine.MouseController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABgCgAAgAAAAAAEAAEAAAAAAAAEAEEAAAAACQAAA=</HashCode>
+      <FileName>Engine\MouseController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tekken101.Properties.Resources" Collapsed="true">
+    <Position X="34.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAFAAAAAACABEEAAAQEAAAAYIAAAAAEIAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Properties.Settings" Collapsed="true">
+    <Position X="31" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tekken101.Renderer.PaintBrush" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAWBiAQAAAEkAIAAAIAAAgABAAAAAAAgAAYEBAAQAE=</HashCode>
+      <FileName>Renderer\PaintBrush.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Tekken101.IGameEngine" Collapsed="true">
+    <Position X="32.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Interfaces\IGameEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.IUserInputInterface" Collapsed="true">
+    <Position X="34.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAAAAAAAAAAEAAEAAAAAAAAEAAEAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUserInputInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.IAssassin" Collapsed="true">
+    <Position X="31" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAssassin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.IBerserk" Collapsed="true">
+    <Position X="32.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAgAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBerserk.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.ICaster" Collapsed="true">
+    <Position X="34.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAgAAAAAAAAAAAAAAgAAAEAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICaster.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.ICharacter" Collapsed="true">
+    <Position X="31" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAIAgCAAAAAAAAAQBAAAAAAAAAAAAAgAAQAA=</HashCode>
+      <FileName>Interfaces\ICharacter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.IGameObject" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAABAAYAA=</HashCode>
+      <FileName>Interfaces\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.IMovable" Collapsed="true">
+    <Position X="34.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.IPaintInterface" Collapsed="true">
+    <Position X="31" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPaintInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.IRenderable" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Interfaces\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tekken101.Interfaces.ISkill" Collapsed="true">
+    <Position X="32.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAEAIAAABAAhAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISkill.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Tekken101.PlayerType" Collapsed="true">
+    <Position X="31" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAQAAAAIAAAAgAAAAgAABAAAAAAAgAEAAAAAA=</HashCode>
+      <FileName>PlayerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tekken101.Renderer.SpriteType" Collapsed="true">
+    <Position X="32.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAioAAgkAAggQAACACoUQaBQsJAQAAAACAgUgBIIE=</HashCode>
+      <FileName>Renderer\SpriteType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -66,7 +66,42 @@ namespace Tekken101.Engine
 
         private void InitializeEnemy(PlayerType playerType)
         {
-            // TODO: Enemy List all characters expect player 
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            switch (randomNumber)
+            {
+                    
+                case 0:
+                    this.enemy = new Baek(SpriteType.Player, 100, "Baek", "Assassin", 100, 30, 20, 10, 10);
+                    break;
+                case 1:
+                    this.enemy = new Christie(SpriteType.Player, 100, "Christie", "Assassin", 100, 30, 20, 10, 10);
+                    break;
+                case 2:
+                    this.enemy = new Heihachi(SpriteType.Player, 100, "Heihachi", "Berserk", 100, 30, 20, 10, 10);
+                    break;
+                case 3:
+                    this.enemy = new Jin(SpriteType.Player, 100, "Jin", "Berserk", 100, 30, 20, 10, 10);
+                    break;
+                case 4:
+                    this.enemy = new Lee(SpriteType.Player, 100, "Lee", "Assassin", 100, 30, 20, 10, 10);
+                    break;
+                case 5:
+                    this.enemy = new Leo(SpriteType.Player, 100, "Leo", "Assassin", 100, 30, 20, 10, 10);
+                    break;
+                case 6:
+                    this.enemy = new Lili(SpriteType.Player, 100, "Lili", "Assassin", 100, 30, 20, 10, 10);
+                    break;
+                case 7:
+                    this.enemy = new Miguel(SpriteType.Player, 100, "Miguel", "Berserk", 100, 30, 20, 10, 10);
+                    break;
+                case 8:
+                    this.player = new Nina(SpriteType.Player, 100, "Nina", "Assassin", 100, 30, 20, 10, 10);
+                    break;
+                case 9:
+                    this.player = new Steve(SpriteType.Player, 100, "Steve", "Berserk", 100, 30, 20, 10, 10);
+                    break;
+            }
         }
 
 
