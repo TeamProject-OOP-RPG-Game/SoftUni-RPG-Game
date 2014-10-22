@@ -30,7 +30,7 @@
 
             set
             {
-                this.attackOne = new BaseSkill(SpriteType.HammerHead, "Hammer Head", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackOne = new BaseSkill(SpriteType.FreakShow, "Freak Show", DestriptionSkillOne, 55, 50, 70, 200);
             }
         }
 
@@ -43,7 +43,7 @@
 
             set
             {
-                this.attackTwo = new BaseSkill(SpriteType.CobraBite, "Cobra Bite", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackTwo = new BaseSkill(SpriteType.SatelliteMoon, "Satellite Moon", DestriptionSkillTwo, 55, 50, 70, 200);
             }
         }
 
@@ -56,7 +56,7 @@
 
             set
             {
-                this.attackThree = new BaseSkill(SpriteType.HuntingSerpent, "Hunting Serpent", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackThree = new BaseSkill(SpriteType.Samba, "Samba", DestriptionSkillThree, 55, 50, 70, 200);
             }
         }
 
@@ -69,7 +69,7 @@
 
             set
             {
-                this.attackFour = new BaseSkill(SpriteType.SnakeRevenge, "Snake Revenge", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackFour = new BaseSkill(SpriteType.AirMail, "Air Mail", DestriptionSkillFour, 55, 50, 70, 200);
             }
         }
 
