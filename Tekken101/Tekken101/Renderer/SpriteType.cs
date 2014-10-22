@@ -49,6 +49,11 @@
         FreakShow,
         SatelliteMoon,
         Samba,
-        AirMail
+        AirMail,
+        //Miguel Skills
+        BountyBeat,
+        Exciter,
+        Bottleneck,
+        Pinnacle
     }
 }

@@ -30,7 +30,7 @@
 
             set
             {
-                this.attackOne = new BaseSkill(SpriteType.HammerHead, "Hammer Head", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackOne = new BaseSkill(SpriteType.DivineReturn, "Divine Return", DestriptionSkillOne, 55, 50, 70, 200);
             }
         }
 
@@ -43,7 +43,7 @@
 
             set
             {
-                this.attackTwo = new BaseSkill(SpriteType.CobraBite, "Cobra Bite", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackTwo = new BaseSkill(SpriteType.SwingingToss, "Swinging Toss", DestriptionSkillTwo, 55, 50, 70, 200);
             }
         }
 
@@ -56,7 +56,7 @@
 
             set
             {
-                this.attackThree = new BaseSkill(SpriteType.HuntingSerpent, "Hunting Serpent", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackThree = new BaseSkill(SpriteType.SplitterGuillotine, "Splitter Guillotine", DestriptionSkillThree, 55, 50, 70, 200);
             }
         }
 
@@ -69,7 +69,7 @@
 
             set
             {
-                this.attackFour = new BaseSkill(SpriteType.SnakeRevenge, "Snake Revenge", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackFour = new BaseSkill(SpriteType.TwinPalms, "Twin Palms", DestriptionSkillFour, 55, 50, 70, 200);
             }
         }
         public override void CastSkillOne(ICharacter Enemy)

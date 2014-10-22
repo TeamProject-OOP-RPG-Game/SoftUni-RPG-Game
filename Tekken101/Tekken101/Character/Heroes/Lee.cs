@@ -21,6 +21,7 @@
             this.SpriteType = type;
             this.PlayerType = PlayerType.Lee;
         }
+
         public BaseSkill AttackOne
         {
             get
@@ -30,7 +31,7 @@
 
             set
             {
-                this.attackOne = new BaseSkill(SpriteType.HammerHead, "Hammer Head", DestriptionSkillOne, 55, 50, 70, 200);
+                this.attackOne = new BaseSkill(SpriteType.Bulldog, "Bulldog", DestriptionSkillOne, 55, 50, 70, 200);
             }
         }
 
@@ -43,7 +44,7 @@
 
             set
             {
-                this.attackTwo = new BaseSkill(SpriteType.CobraBite, "Cobra Bite", DestriptionSkillTwo, 55, 50, 70, 200);
+                this.attackTwo = new BaseSkill(SpriteType.Stunner, "Stunner", DestriptionSkillTwo, 55, 50, 70, 200);
             }
         }
 
@@ -56,7 +57,7 @@
 
             set
             {
-                this.attackThree = new BaseSkill(SpriteType.HuntingSerpent, "Hunting Serpent", DestriptionSkillThree, 55, 50, 70, 200);
+                this.attackThree = new BaseSkill(SpriteType.Harassment, "Harassment", DestriptionSkillThree, 55, 50, 70, 200);
             }
         }
 
@@ -69,9 +70,10 @@
 
             set
             {
-                this.attackFour = new BaseSkill(SpriteType.SnakeRevenge, "Snake Revenge", DestriptionSkillFour, 55, 50, 70, 200);
+                this.attackFour = new BaseSkill(SpriteType.MistIllusion, "Mist Illusion", DestriptionSkillFour, 55, 50, 70, 200);
             }
         }
+
         public override void CastSkillOne(ICharacter Enemy)
         {
             this.AttackOne.UseSkill(this, Enemy);
