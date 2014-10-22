@@ -49,11 +49,11 @@
     <Compile Include="Character\BaseBerserk.cs" />
     <Compile Include="Character\BaseCharacter.cs" />
     <Compile Include="Character\BaseSkill.cs" />
-    <Compile Include="Character\Heroes\Alien.cs" />
+    <Compile Include="Character\Heroes\Christie.cs" />
     <Compile Include="Character\Heroes\Baek.cs" />
     <Compile Include="Character\Heroes\Heihachi.cs" />
     <Compile Include="Character\Heroes\Jin.cs" />
-    <Compile Include="Character\Heroes\JohnTheBaptist.cs" />
+    <Compile Include="Character\Heroes\Miguel.cs" />
     <Compile Include="Character\Heroes\Lee.cs" />
     <Compile Include="Character\Heroes\Leo.cs" />
     <Compile Include="Character\Heroes\Lili.cs" />
@@ -74,6 +74,7 @@
     <Compile Include="Interfaces\ISkill.cs" />
     <Compile Include="Interfaces\IUserInputInterface.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="PlayerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer\SpriteType.cs" />
     <Compile Include="Renderer\PaintBrush.cs" />
@@ -105,7 +106,6 @@
     <EmbeddedResource Include="TheGame.resx">
       <DependentUpon>TheGame.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -10,10 +10,11 @@
         public const string DestriptionSkillThree = ": /n10% hit chance /n80-90 damage";
         public const string DestriptionSkillFour = ": /n20% hit chance /n70-100 damage /n takes 20 health points from the caster";
 
-        public Baek(SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
-            : base(X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
+        public Baek(PlayerType playerType, SpriteType type, int X, string name, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialLifeSteal)
+            : base(playerType, X, name, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialLifeSteal)
         {
             this.SpriteType = type;
+            this.PlayerType = playerType;
         }
 
         public override void CastSkillOne(ICharacter Enemy)

@@ -21,8 +21,6 @@ namespace Tekken101
         {
 
             Form theGame = new TheGame((PictureBox)sender);
-
-
             theGame.Show();
             this.Hide();
         }

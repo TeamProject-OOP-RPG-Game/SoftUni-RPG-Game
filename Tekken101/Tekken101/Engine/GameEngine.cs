@@ -12,20 +12,64 @@ namespace Tekken101.Engine
         private IPaintInterface painter;
         private BaseCharacter player;
         private BaseCharacter enemy;
-        public GameEngine(IUserInputInterface controller, IPaintInterface painter)
+        public GameEngine(IUserInputInterface controller, IPaintInterface painter, PlayerType playerType)
         {
             SubscribeToUserInput(controller);
-            InitializeCharacters();
+            InitializeCharacters(playerType);
             this.painter = painter;
             painter.AddObject(player);
             painter.AddObject(enemy);
         }
 
-        private void InitializeCharacters()
+        private void InitializeCharacters(PlayerType playerType)
         {
-            player = new Nina(SpriteType.Player, 100, "alien", "I'm The best", 100, 10, 100, 5, 5);
-            enemy = new Baek(SpriteType.Enemy, 900, "John", "I'm The best", 100, 10, 100, 5, 5);
+            InitializePlayer(playerType);
+            InitializeEnemy(playerType);
         }
+
+        private void InitializePlayer(PlayerType playerType)
+        {
+            switch (playerType)
+            {
+                case PlayerType.Baek:
+                    this.player = new Baek();
+                    break;
+                case PlayerType.Christie:
+                    this.player = new Christie();
+                    break;
+                case PlayerType.Heihachi:
+                    this.player = new Heihachi();
+                    break;
+                case PlayerType.Jin:
+                    this.player = new Jin();
+                    break;
+                case PlayerType.Lee:
+                    this.player = new Lee();
+                    break;
+                case PlayerType.Leo:
+                    this.player = new Leo();
+                    break;
+                case PlayerType.Lili:
+                    this.player = new Lili();
+                    break;
+                case PlayerType.Miguel:
+                    this.player = new Miguel();
+                    break;
+                case PlayerType.Nina:
+                    this.player = new Nina();
+                    break;
+                case PlayerType.Steve:
+                    this.player = new Steve();
+                    break;
+            }
+        }
+
+        private void InitializeEnemy(PlayerType playerType)
+        {
+            // TODO: Enemy List all characters expect player 
+        }
+
+
 
         public void StartGame()
         {
@@ -52,7 +96,7 @@ namespace Tekken101.Engine
             {
                 player.Move(0);
             }
-            else if(player.X + distance <= 0) 
+            else if (player.X + distance <= 0)
             {
                 player.X = 0;
             }
@@ -88,7 +132,7 @@ namespace Tekken101.Engine
         {
             player.CastSkillThree(enemy);
             painter.RedrawObject(enemy);
-            
+
         }
         private void UseSpellFour()
         {
@@ -102,7 +146,7 @@ namespace Tekken101.Engine
 
         public void ShowSpellFourDescription()
         {
-            
+
         }
     }
 }

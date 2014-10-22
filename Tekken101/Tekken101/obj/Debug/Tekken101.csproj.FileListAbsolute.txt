@@ -7,3 +7,4 @@ D:\Github\OOP-TeamWor\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.TheGame.reso
 D:\Github\OOP-TeamWor\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.csproj.GenerateResource.Cache
 D:\Github\OOP-TeamWor\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.exe
 D:\Github\OOP-TeamWor\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.pdb
+D:\Github\OOP-TeamWor\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.csprojResolveAssemblyReference.cache

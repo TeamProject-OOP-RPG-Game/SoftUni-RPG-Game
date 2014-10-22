@@ -11,6 +11,7 @@ namespace Tekken101.Characters
         private const int InitialSizeX = 160;
         private const int InitialSizeY = 350;
         private const int InitialY = 150;
+        private PlayerType playerType;
         private string name;
         private string description;
         private int currentHealth;
@@ -19,9 +20,10 @@ namespace Tekken101.Characters
         private int defense;
         private int criticalChance;
         
-        public BaseCharacter(int initialX, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
+        public BaseCharacter(PlayerType playerType, int initialX, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance)
             :base (initialX, InitialY, InitialSizeX, InitialSizeY)
         {
+            this.PlayerType = playerType;
             this.Name = initialName;
             this.Description = description;
             this.CurrentHealth = initialHealth;
@@ -156,6 +158,8 @@ namespace Tekken101.Characters
                 this.criticalChance = value;
             }
         }
+
+        public PlayerType PlayerType { get; set; }
 
 
 

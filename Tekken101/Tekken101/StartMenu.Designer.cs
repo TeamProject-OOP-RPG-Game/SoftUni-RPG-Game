@@ -70,7 +70,7 @@
             this.christie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.christie.TabIndex = 8;
             this.christie.TabStop = false;
-            this.Controls.Add(christie);
+            this.christie.MouseClick += StartGame;
             // 
             // nina
             // 
@@ -81,7 +81,7 @@
             this.nina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.nina.TabIndex = 7;
             this.nina.TabStop = false;
-            this.Controls.Add(nina);
+            this.nina.MouseClick += StartGame;
             // 
             // lili
             // 
@@ -92,7 +92,7 @@
             this.lili.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lili.TabIndex = 6;
             this.lili.TabStop = false;
-            this.Controls.Add(lili);
+            this.lili.MouseClick += StartGame;
             // 
             // steve
             // 
@@ -103,7 +103,7 @@
             this.steve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.steve.TabIndex = 5;
             this.steve.TabStop = false;
-            this.Controls.Add(steve);
+            this.steve.MouseClick += StartGame;
             // 
             // baek
             // 
@@ -114,7 +114,7 @@
             this.baek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.baek.TabIndex = 4;
             this.baek.TabStop = false;
-            this.Controls.Add(baek);
+            this.baek.MouseClick += StartGame;
             // 
             // miguel
             // 
@@ -125,7 +125,7 @@
             this.miguel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.miguel.TabIndex = 3;
             this.miguel.TabStop = false;
-            this.Controls.Add(miguel);
+            this.miguel.MouseClick += StartGame;
             // 
             // heihachi
             // 
@@ -136,7 +136,7 @@
             this.heihachi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.heihachi.TabIndex = 2;
             this.heihachi.TabStop = false;
-            this.Controls.Add(heihachi);
+            this.heihachi.MouseClick += StartGame;
             // 
             // leo
             // 
@@ -147,7 +147,7 @@
             this.leo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.leo.TabIndex = 1;
             this.leo.TabStop = false;
-            this.Controls.Add(leo);
+            this.leo.MouseClick += StartGame;
             // 
             // lee
             // 
@@ -158,7 +158,7 @@
             this.lee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lee.TabIndex = 0;
             this.lee.TabStop = false;
-            this.Controls.Add(lee);
+            this.lee.MouseClick += StartGame;
             // 
             // StartMenu
             // 

@@ -10,10 +10,11 @@
         public const string DestriptionSkillThree = "Fuck you up with holy light: /n10% hit chance /n80-90 damage";
         public const string DestriptionSkillFour = "Summons angels to ambush you in the back: /n60% hit chance /n20-70 damage /n takes 100 health points from the caster";
 
-        public Jin(SpriteType type, int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance)
-            : base(X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialStunChance)
+        public Jin(PlayerType playerType, SpriteType type, int X, string initialName, string description, int initialHealth, int initialSpeed, int initialDefense, int initialCriticalChance, int initialStunChance)
+            : base(playerType, X, initialName, description, initialHealth, initialSpeed, initialDefense, initialCriticalChance, initialStunChance)
         {
             SpriteType = type;
+            this.PlayerType = playerType;
         }
 
         public override void CastSkillOne(ICharacter Enemy)
