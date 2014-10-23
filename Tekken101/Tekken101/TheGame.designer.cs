@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheGame));
             this.SuspendLayout();
             // 
             // TheGame
@@ -38,6 +39,7 @@
             this.BackgroundImage = global::Tekken101.Properties.Resources.arena2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TheGame";
             this.Text = "RPG Game";
             this.Load += new System.EventHandler(this.TheGame_Load);

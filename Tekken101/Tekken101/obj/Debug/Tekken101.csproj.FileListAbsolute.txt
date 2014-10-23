@@ -29,3 +29,4 @@ C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tek
 C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.TheGame.resources
 C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.csproj.GenerateResource.Cache
 D:\Github\OOP-TeamWor\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.LoseScreen.resources
+C:\Users\mitko\Desktop\SoftUni-RPG-Game\SoftUni-RPG-Game.git\trunk\Tekken101\Tekken101\obj\Debug\Tekken101.LoseScreen.resources

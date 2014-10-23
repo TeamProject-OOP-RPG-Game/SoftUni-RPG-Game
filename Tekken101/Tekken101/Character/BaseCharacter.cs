@@ -163,11 +163,11 @@ namespace Tekken101.Characters
 
         public abstract bool CastSkillOne(ICharacter Enemy);
 
-        public abstract void CastSkillTwo(ICharacter Enemy);
+        public abstract bool CastSkillTwo(ICharacter Enemy);
 
-        public abstract void CastSkillThree(ICharacter Enemy);
+        public abstract bool CastSkillThree(ICharacter Enemy);
 
-        public abstract void CastSkillFour(ICharacter Enemy);
+        public abstract bool CastSkillFour(ICharacter Enemy);
 
 
 

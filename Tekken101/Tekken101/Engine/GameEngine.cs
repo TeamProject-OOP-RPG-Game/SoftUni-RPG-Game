@@ -150,16 +150,46 @@ namespace Tekken101.Engine
             PlayEnemyTurn();
         }
 
+        private void MoveEnemyLeft()
+        {
+            enemy.Move(-50);
+            painter.RedrawObject(enemy);
+            PlayNextTurn();
+        }
+
         private void UseSpellOne()
         {
             bool isHit = player.CastSkillOne(enemy);
             painter.DrawIsHit(isHit);
+            PlayEnemyTurn();
+        }
+        private void UseSpellTwo()
+        {
+            bool isHit = player.CastSkillOne(enemy);
+            player.CastSkillTwo(enemy);
+            painter.RedrawObject(enemy);
+            PlayEnemyTurn();
+        }
+        private void UseSpellThree()
+        {
+            bool isHit = player.CastSkillOne(enemy);
+            player.CastSkillThree(enemy);
+            painter.RedrawObject(enemy);
+            PlayEnemyTurn();
+
+        }
+        private void UseSpellFour()
+        {
+            bool isHit = player.CastSkillOne(enemy);
+            player.CastSkillFour(enemy);
             painter.RedrawObject(enemy);
             PlayEnemyTurn();
         }
 
         private void PlayEnemyTurn()
         {
+            Random number = new Random();
+            int option = number.Next(0, 3);
             if (enemy.CurrentHealth == 0)
             {
                 StartGame();
@@ -170,33 +200,41 @@ namespace Tekken101.Engine
                 timer.Interval = 2000;
                 timer.Tick += (s, args) =>
                 {
-                    enemy.CastSkillOne(player);
-                    PlayNextTurn();
+                    if (enemy.X - 200 > player.X + 160)
+                    {
+                        MoveEnemyLeft();
+                    }
+                    else
+                    {
+                        bool isHit;
+                        switch (option)
+                        {
+                            case 0: isHit = enemy.CastSkillOne(player);
+                                    enemy.CastSkillFour(player);
+                                    painter.RedrawObject(player);
+                                break;
+                            case 1: isHit = enemy.CastSkillOne(player);
+                                    enemy.CastSkillFour(player);
+                                    painter.RedrawObject(player);
+                                break;
+                            case 2: isHit = enemy.CastSkillOne(player);
+                                    enemy.CastSkillFour(player);
+                                    painter.RedrawObject(player);
+                                break;
+                            case 3: isHit = enemy.CastSkillOne(player);
+                                    enemy.CastSkillFour(player);
+                                    painter.RedrawObject(player);
+                                break;
+                        }
+                       
+                    }
                     timer.Stop();
+                    PlayNextTurn();
                 };
                 timer.Start();
             }
 
            
-        }
-        private void UseSpellTwo()
-        {
-            player.CastSkillTwo(enemy);
-            painter.RedrawObject(enemy);
-            PlayEnemyTurn();
-        }
-        private void UseSpellThree()
-        {
-            player.CastSkillThree(enemy);
-            painter.RedrawObject(enemy);
-            PlayEnemyTurn();
-
-        }
-        private void UseSpellFour()
-        {
-            player.CastSkillFour(enemy);
-            painter.RedrawObject(enemy);
-            PlayEnemyTurn();
         }
         public void PlayNextTurn()
         {

@@ -28,20 +28,22 @@
             return isHit;
         }
 
-        public override void CastSkillTwo(ICharacter Enemy)
+        public override bool CastSkillTwo(ICharacter Enemy)
         {
-            this.attackTwo.UseSkill(this, Enemy);
+            bool isHit = this.attackOne.UseSkill(this, Enemy);
+            return isHit;
         }
 
-        public override void CastSkillThree(ICharacter Enemy)
+        public override bool CastSkillThree(ICharacter Enemy)
         {
-            this.attackThree.UseSkill(this, Enemy);
+            bool isHit = this.attackOne.UseSkill(this, Enemy);
+            return isHit;
         }
 
-        public override void CastSkillFour(ICharacter Enemy)
+        public override bool CastSkillFour(ICharacter Enemy)
         {
-            this.attackFour.UseSkill(this, Enemy);
-            this.CurrentHealth -= 20;
+            bool isHit = this.attackOne.UseSkill(this, Enemy);
+            return isHit;
         }
     }
 }

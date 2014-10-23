@@ -4,10 +4,10 @@
     {
         bool CastSkillOne(ICharacter Enemy);
 
-        void CastSkillTwo(ICharacter Enemy);
+        bool CastSkillTwo(ICharacter Enemy);
 
-        void CastSkillThree(ICharacter Enemy);
+        bool CastSkillThree(ICharacter Enemy);
 
-        void CastSkillFour(ICharacter Enemy);
+        bool CastSkillFour(ICharacter Enemy);
     }
 }

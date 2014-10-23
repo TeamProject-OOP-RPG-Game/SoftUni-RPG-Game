@@ -13,7 +13,9 @@ namespace Tekken101
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+           
             Application.Run(new StartMenu());
+            
         }
     }
 }
