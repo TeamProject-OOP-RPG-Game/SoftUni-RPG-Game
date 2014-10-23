@@ -197,7 +197,7 @@ namespace Tekken101.Engine
             else
             {
                 Timer timer = new Timer();
-                timer.Interval = 2000;
+                timer.Interval = 1000;
                 timer.Tick += (s, args) =>
                 {
                     if (enemy.X - 200 > player.X + 160)

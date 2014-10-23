@@ -26,15 +26,6 @@
             IUserInputInterface controller = new MouseController(this);
 
             IGameEngine engine = new GameEngine(controller, painter, this.type);
-
-//            Timer timer = new Timer();
-//            timer.Interval = 100;
-//            timer.Tick += (s, args) =>
-//            {
-//                engine.PlayNextTurn();
-//            };
-//
-//            timer.Start();
         }
 
         private void GetPlayerType(string nameOfPlayer)
