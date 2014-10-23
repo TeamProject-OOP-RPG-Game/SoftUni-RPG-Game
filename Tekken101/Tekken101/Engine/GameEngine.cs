@@ -1,5 +1,7 @@
 ﻿
 
+using System.Windows.Forms;
+
 namespace Tekken101.Engine
 {
     using System;
@@ -12,10 +14,12 @@ namespace Tekken101.Engine
         private IPaintInterface painter;
         private BaseCharacter player;
         private BaseCharacter enemy;
+        private PlayerType playerType;
 
         public GameEngine(IUserInputInterface controller, IPaintInterface painter, PlayerType playerType)
         {
             SubscribeToUserInput(controller);
+            this.playerType = playerType;
             InitializeCharacters(playerType);
             this.painter = painter;
             this.painter.AddObject(player);
@@ -24,6 +28,7 @@ namespace Tekken101.Engine
 
         private void InitializeCharacters(PlayerType playerType)
         {
+            
             this.InitializePlayer(playerType);
             this.InitializeEnemy();
         }
@@ -105,17 +110,6 @@ namespace Tekken101.Engine
             }
         }
 
-
-
-        public void StartGame()
-        {
-        }
-
-        public void EndGame()
-        {
-            throw new NotImplementedException();
-        }
-
         private void SubscribeToUserInput(IUserInputInterface userInteface)
         {
             userInteface.OnLeftPressed += (sender, args) => this.MovePlayerLeft();
@@ -165,8 +159,17 @@ namespace Tekken101.Engine
 
         private void PlayEnemyTurn()
         {
-            enemy.CastSkillOne(player);
-            PlayNextTurn();
+            if (enemy.CurrentHealth == 0)
+            {
+                StartGame();
+            }
+            else
+            {
+                enemy.CastSkillOne(player);
+                PlayNextTurn();
+            }
+
+           
         }
         private void UseSpellTwo()
         {
@@ -190,6 +193,31 @@ namespace Tekken101.Engine
         public void PlayNextTurn()
         {
             painter.RedrawObject(player);
+            if (player.CurrentHealth == 0)
+            {
+                EndGame();
+            }
+        }
+
+        public void StartGame()
+        {
+            painter.RemoveObject(this.player);
+            painter.RemoveObject(this.enemy);
+            InitializeCharacters(this.playerType);
+            painter.AddObject(this.player);
+            painter.AddObject(this.enemy);
+        }
+
+        public void EndGame()
+        {
+            Form LoseForm = new LoseScreen();
+            LoseForm.Show();
+
+            Timer timer = new Timer();
+            timer.Interval = 3000;
+            timer.Tick += (s, args) => Environment.Exit(1);
+
+            timer.Start();
         }
     }
 }

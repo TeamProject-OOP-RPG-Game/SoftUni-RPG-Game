@@ -1,7 +1,6 @@
 ﻿namespace Tekken101
 {
-    using Tekken101.Engine;
-    partial class TheGame
+    partial class LoseScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
-            // TheGame
+            // LoseScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tekken101.Properties.Resources.arena2;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1200, 600);
-            this.Name = "TheGame";
-            this.Text = "RPG Game";
-            this.Load += new System.EventHandler(this.TheGame_Load);
+            this.BackgroundImage = global::Tekken101.Properties.Resources.end;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(584, 298);
+            this.Name = "LoseScreen";
+            this.Text = "LoseScreen";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-
-
-
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
-
