@@ -145,6 +145,7 @@
     <None Include="Images\Characters\steveS.png" />
     <Content Include="Images\end.png" />
     <Content Include="Images\left.png" />
+    <Content Include="Images\missed.png" />
     <Content Include="Images\right.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

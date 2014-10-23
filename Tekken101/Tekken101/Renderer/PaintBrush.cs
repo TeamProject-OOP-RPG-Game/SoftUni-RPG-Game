@@ -314,17 +314,28 @@
 
         public void DrawIsHit(bool isHit)
         {
-            if (isHit)
+            if (!isHit)
             {
-                var imageMiss = Image.FromFile("../../Images/Spells/01-02.png");
+                var imageMiss = Image.FromFile("../../Images/missed.png");
                 var miss = new PictureBox();
                 miss.Name = "miss";
                 miss.BackColor = Color.Transparent;
                 miss.Image = imageMiss;
                 miss.Parent = this.gameWindow;
-                miss.Location = new Point(580, 290);
-                miss.Size = new Size(40, 20);
+                miss.Location = new Point(560, 100);
+                miss.Size = new Size(80, 40);
                 this.gameWindow.Controls.Add(miss);
+
+                Timer timer = new Timer();
+                timer.Interval = 1000;
+                timer.Tick += (s, args) =>
+                {
+                    miss.Hide();
+                    timer.Stop();
+                };
+
+                timer.Start();
+
             }
         }
     }
