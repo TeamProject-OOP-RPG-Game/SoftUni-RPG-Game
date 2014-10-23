@@ -11,6 +11,7 @@
         int DamageMin { get; set; }
 
         int DamageMax { get; set; }
-        void UseSkill(ICharacter Caster, ICharacter Enemy);
+
+        bool UseSkill(ICharacter Caster, ICharacter Enemy);
     }
 }

@@ -22,9 +22,10 @@
             this.PlayerType = PlayerType.Jin;
         }
 
-        public override void CastSkillOne(ICharacter Enemy)
+        public override bool CastSkillOne(ICharacter Enemy)
         {
-            this.attackOne.UseSkill(this, Enemy);
+            bool isHit = this.attackOne.UseSkill(this, Enemy);
+            return isHit;
         }
 
         public override void CastSkillTwo(ICharacter Enemy)

@@ -161,7 +161,7 @@ namespace Tekken101.Characters
 
         public PlayerType PlayerType { get; set; }
 
-        public abstract void CastSkillOne(ICharacter Enemy);
+        public abstract bool CastSkillOne(ICharacter Enemy);
 
         public abstract void CastSkillTwo(ICharacter Enemy);
 

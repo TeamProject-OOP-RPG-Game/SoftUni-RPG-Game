@@ -13,6 +13,7 @@ namespace Tekken101.Characters
         private int damageMin;
         private int damageMax;
         private int range;
+        private Random rand = new Random();
 
         public BaseSkill(SpriteType spriteType, string skillName, string skillDescription, int hitChance, int damageMin, int damageMax, int range)
         {
@@ -131,9 +132,24 @@ namespace Tekken101.Characters
 
         public SpriteType SpriteType { get; set; }
 
-        public void UseSkill(ICharacter Caster, ICharacter Enemy)
+        public bool UseSkill(ICharacter Caster, ICharacter Enemy)
         {
-            Enemy.CurrentHealth -= 60;
+            int hitDmg = rand.Next(this.DamageMin, this.DamageMax);
+            int chance = rand.Next(0, 100);
+            bool isHit = false;
+            if (chance <= this.HitChance)
+            {
+                if (chance <= Caster.CriticalChance)
+                {
+                    Enemy.CurrentHealth -= hitDmg / Enemy.Defense * 8;
+                }
+                else
+                {
+                    Enemy.CurrentHealth -= hitDmg / Enemy.Defense * 4;
+                }
+                isHit = true;
+            }
+            return isHit;
         }
     }
 }

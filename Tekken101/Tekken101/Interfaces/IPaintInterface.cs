@@ -7,5 +7,7 @@
         void RemoveObject(IRenderable renderableObject);
 
         void RedrawObject(IRenderable renderableObject);
+
+        void DrawIsHit(bool isHit);
     }
 }

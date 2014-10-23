@@ -2,7 +2,7 @@
 {
     public interface ICaster
     {
-        void CastSkillOne(ICharacter Enemy);
+        bool CastSkillOne(ICharacter Enemy);
 
         void CastSkillTwo(ICharacter Enemy);
 

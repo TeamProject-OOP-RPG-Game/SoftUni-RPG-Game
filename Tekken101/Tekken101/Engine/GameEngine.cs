@@ -152,7 +152,8 @@ namespace Tekken101.Engine
 
         private void UseSpellOne()
         {
-            player.CastSkillOne(enemy);
+            bool isHit = player.CastSkillOne(enemy);
+            painter.DrawIsHit(isHit);
             painter.RedrawObject(enemy);
             PlayEnemyTurn();
         }
@@ -165,8 +166,15 @@ namespace Tekken101.Engine
             }
             else
             {
-                enemy.CastSkillOne(player);
-                PlayNextTurn();
+                Timer timer = new Timer();
+                timer.Interval = 2000;
+                timer.Tick += (s, args) =>
+                {
+                    enemy.CastSkillOne(player);
+                    PlayNextTurn();
+                    timer.Stop();
+                };
+                timer.Start();
             }
 
            

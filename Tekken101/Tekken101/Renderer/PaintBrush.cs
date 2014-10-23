@@ -310,5 +310,22 @@
         {
             return this.progressBars.First(p => p.Tag == character);
         }
+
+
+        public void DrawIsHit(bool isHit)
+        {
+            if (isHit)
+            {
+                var imageMiss = Image.FromFile("../../Images/Spells/01-02.png");
+                var miss = new PictureBox();
+                miss.Name = "miss";
+                miss.BackColor = Color.Transparent;
+                miss.Image = imageMiss;
+                miss.Parent = this.gameWindow;
+                miss.Location = new Point(580, 290);
+                miss.Size = new Size(40, 20);
+                this.gameWindow.Controls.Add(miss);
+            }
+        }
     }
 }

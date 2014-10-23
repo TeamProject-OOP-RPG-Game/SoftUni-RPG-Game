@@ -47,24 +47,5 @@
             this.DefenseMode = !this.DefenseMode;
         }
 
-        public override void CastSkillOne(ICharacter Enemy)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void CastSkillTwo(ICharacter Enemy)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void CastSkillThree(ICharacter Enemy)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void CastSkillFour(ICharacter Enemy)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
